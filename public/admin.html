@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Ivo Deli</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./images/IVO logo thumbnail.jpg">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/burger-pizza.css">
+</head>
+
+<body>
+    <div id="content" style="display: none;">
+        <div class="burger-navigator">
+            <div><img id="burger-nav" src="./images/Burger Icon.png"></div>
+        </div>
+        <div style="background-image: url('../images/BurgerCover.png');" class="cover">
+            <nav class="nav-bar">
+                <div style="padding-left: 50px;">
+                    <a href="./home"><img style="width: 80px;" src="./images/logo.png" alt="Ivo Deli" class="logo"></a>
+                </div>
+                <ul class="main-nav">
+                    <li><a href="./home">HOME</a></li>
+                    <li><a href="./burger">BURGER</a></li>
+                    <li><a href="./pizza">PIZZA</a></li>
+                    <li><a href="./gelato">GELATO</a></li>
+                    <li><a href="./services">SERVICES</a></li>
+                </ul>
+            </nav>
+            <div>
+                <div>
+                    <ul style="font-size: 50px; font-family: 'Masterplan'; margin-left: 7vw; color: #ffffff;">NEW
+                        PRODUCT</ul>
+                    <div style="font-family: UVNSachVo; color: white; font-size: 30px;">
+                        <form action="/admin" method="POST" target="_blank" style="margin-left: 10%" enctype="multipart/form-data">
+                            <div style="width: 100%; height: 30px; background-color: transparent;"></div>
+                            <label for="titleVN">Tên tiếng Việt:</label>
+                            <input style="width: 90%; height: 50px;" type="text" id="titleVN" name="titleVN"><br><br>
+                            <label for="titleENG">Tên tiếng Anh:</label>
+                            <input style="width: 90%; height: 50px;" type="text" id="titleENG" name="titleENG"><br><br>
+                            <label for="descriptionVN">Mô tả tiếng Việt:</label>
+                            <input style="width: 90%; height: 50px;" type="text" id="descriptionVN"
+                                name="descriptionVN"><br><br>
+                            <label for="descriptionENG">Mô tả tiếng Anh:</label>
+                            <input style="width: 90%; height: 50px;" type="text" id="descriptionENG"
+                                name="descriptionENG"><br><br>
+                            <label for="price">Giá:</label><br>
+                            <input style="width: 90%; height: 50px;" type="text" id="price"
+                                name="price"><br><br>
+                            <input type="checkbox" id="isBurger" name="isBurger" value="Burger">
+                            <label for="isBurger"> BURGER</label><br>
+                            <input type="checkbox" id="isHotdog" name="isHotdog" value="Hotdog">
+                            <label for="isHotdog"> HOTDOG</label><br>
+                            <input type="checkbox" id="isPizza" name="isPizza" value="Pizza">
+                            <label for="isPizza"> PIZZA</label><br>
+                            <label for="photo">Chọn hình:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*">
+                            <button type="submit" value="Submit" id="btn-post">POST</button>
+
+                            <style>
+                                #btn-post {
+                                    float: right;
+                                    margin-top: 20px;
+                                    padding-top: 3px;
+                                    padding-bottom: 3px;
+                                    font-size: 40px;
+                                    width: 30%;
+                                    text-align: center;
+                                    font-family: 'Masterplan';
+                                    font-weight: bold;
+                                    color: rgb(196, 36, 36);
+                                    background: white;
+                                    border: 0px solid #333333;
+                                    border-radius: 4px;
+                                    transition: 0.5s;
+                                    overflow: hidden;
+                                    margin-right: 100px;
+                                }
+                            </style>
+                        </form>
+                    </div>
+                    <div class="blank-space-resize"></div>
+                </div>
+            </div>
+
+            <footer>
+                <div style="width: 100%;">
+                    <div class="blank-space-footer"></div>
+                    <div style="display: flex; font-family: 'UVNHongHaHep'; color: white; font-size: 18px;">
+                        <img style="width: 117px; height: 72px;" src="./images/logo.png">
+                        <div style="margin-left: 30px; width: 40%;">
+                            <ul style="color: #e74e4e; font-size: 30px;">Đà Nẵng</ul>
+                            <ul>03 Lê Thánh Tôn street, Hải Châu district</ul>
+                            <ul>Lô 16-18 An Thượng 32 street, Ngũ Hành Sơn district</ul>
+                            <ul style="color: #e74e4e; font-size: 30px;">Hội An</ul>
+                            <ul>54 Nguyễn Thị Minh Khai street, Cẩm Phô</ul>
+                        </div>
+                        <div style="margin-left: 30px; display: grid; width: 20%;">
+                            <ul style="color: #e74e4e; font-size: 30px;">Products</ul>
+                            <a class="link" href="./burger">Burgers</a>
+                            <a class="link" href="./pizza">Pizzas</a>
+                            <a class="link">Hotdogs</a>
+                            <a class="link" href="./gelato">Gelato</a>
+                            <a class="link" href="./services">Services</a>
+                        </div>
+                        <div style="margin-left: 30px; width: 40%;">
+                            <ul style="color: #e74e4e; font-size: 30px;">Contact</ul>
+                            <ul>Tel: 0905 776 415</ul>
+                            <ul>Mail: aroa1lqd@gmail.com</ul>
+                            <ul style="color: #e74e4e; font-size: 30px;">Head Quarter</ul>
+                            <ul>20 Trần Tống street, Thanh Khê district, Đà Nẵng city </ul>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; display: flex;">
+                        <div style="width: 55%;">
+                            <div style="display: flex;">
+                                <a href="https://www.facebook.com/ivodelidanang/" style="margin-right: 25px;"><img
+                                        src="./images/logo-fb.png"></ul></a>
+                                <a href="https://www.instagram.com/ivodeli/" style="margin-right: 25px;"><img
+                                        src="./images/logo-ig.png"></ul></a>
+                                <a href="https://www.foody.vn/thuong-hieu/ivo-deli-banh-mi-hotdog-kem-y-gelato"
+                                    style="margin-right: 25px;"><img src="./images/logo-foody.png"></ul></a>
+                                <a href="https://food.grab.com/vn/en/restaurant/ivo-deli-burger-kem-%C3%BD-gelato-l%C3%AA-th%C3%A1nh-t%C3%B4n-delivery/VNGFVN000008kt"
+                                    style="margin-right: 25px;"><img src="./images/logo-grabfood.png"></ul></a>
+                            </div>
+                            <div
+                                style="display: flex; font-family: 'UVNHongHaHep'; color: #b3b3b3; font-size: 18px; margin-top: 20px;">
+                                <ul style="margin-right: 40px;">Copyright 2020, IVO DELI by Jason Anger</ul>
+                                <ul style="margin-right: 40px;">Privacy</ul>
+                                <ul style="margin-right: 40px;">Term of Service</ul>
+                            </div>
+                        </div>
+                        <div style="width: 45%;"><a id="back-to-top"><img style="float: right;"
+                                    src="./images/Back to TOP.png"></a></div>
+                    </div>
+                    <div style="height: 30px; width: 100%;"></div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            try {
+                $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+                    document.getElementById("content").style = null;
+                });
+            } catch (e) { };
+        </script>
+        <script>
+            document.getElementById("back-to-top").onclick = function () {
+                $('html, body').animate({ scrollTop: 0 }, 1000);
+            };
+            document.onscroll = function () {
+                if (scrollY > 500) {
+                    document.getElementById("burger-nav").style.display = "inline";
+                } else if (innerWidth > 1100) document.getElementById("burger-nav").style.display = "none";
+                else { }
+            }
+        </script>
+</body>

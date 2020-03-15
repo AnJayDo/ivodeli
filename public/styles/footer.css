@@ -1,0 +1,24 @@
+@font-face {
+    font-family: UVNHongHaHep;
+    src: url(../fonts/UVNHongHaHep.TTF);
+    font-weight: bold;
+}
+
+.blank-space-footer{
+    width: 100%; 
+    height: 220px;
+}
+footer {
+    background-image: url("../images/Footer-BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}

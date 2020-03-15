@@ -1,0 +1,61 @@
+@font-face {
+    font-family: UVNHongHaHep;
+    src: url(../fonts/UVNHongHaHep.TTF);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    padding-top: 30px;
+}
+
+.main-nav {
+    display: flex;
+    margin-left: 70px;
+    width: 45%;
+}
+.main-nav li {
+    margin-top: 14px;
+    list-style: none;
+    margin-right: 70px;
+	display: flex;
+}
+.main-nav li:hover {
+	margin-top: 1vh;
+    list-style: none;
+	display: flex;
+	text-shadow: 20px 20px 20px 20px #77d3d8;
+	transition: all 0.7s ease;
+}
+.main-nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+	font-size: 22px;
+	font-family: 'UVNHongHaHep';
+}
+
+#burger-nav {
+    margin-left: 90%; 
+    width: 70px; 
+    margin-top: 2vh; 
+    margin-right: 60px; 
+    position: fixed; 
+    display: none;
+}
+
+#burger-nav:hover {
+    width: 80px;
+    margin-left: 89.8%;
+    margin-top: 1.8vh;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width:1100px) {
+    .main-nav {
+        display: none;
+    }
+    #burger-nav {
+        display: inline;
+    }
+}

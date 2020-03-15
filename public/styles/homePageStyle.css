@@ -1,0 +1,153 @@
+.space-box {
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+}
+
+.content-box {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-top: 70px;
+    font-family: 'Roboto Slab', serif;
+    background-color: #be4747;
+}
+.ads-left {
+    width: 5vw;
+    height: 100%;
+    background-color: transparent;
+}
+
+.ads-right {
+    width: 5vw;
+    height: 100%;
+    background-color: transparent;
+}
+
+.post-container {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+}
+
+.post-column {
+    width: 32%;
+    display: inline;
+    margin-left: 1.33%;
+}
+
+.post {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    background-color: #9b0d0d;
+    box-shadow: 3px 3px 20px 3px rgb(185, 185, 185);
+}
+
+.post-owner {
+    display: flex; 
+    padding-top:5px;
+}
+
+.post-caption {
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    white-space: nowrap; 
+    display: block;
+    height: auto; 
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-caption:hover {
+    overflow: visible;
+    white-space: pre-line; 
+}
+
+.button-load-more {
+    display: inline;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 42%;
+    top: auto;
+    opacity: 0;
+}
+
+.avatar {
+    margin-top: 4px; 
+    margin-left: 14px; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 30px;
+}
+
+.like {
+    margin-top: 4px; 
+    margin-left: 14px; 
+    width: 30px; 
+    height: 30px;
+}
+
+.post-owner a {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.like-number {
+    font-size: 20px;
+    margin-left: 8px;
+    padding-top: 8px;
+}
+
+@media screen and (max-width:1100px) {
+    .post {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 30px;
+        margin-top: 30px;
+        padding-bottom: 15px;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 3px 3px 20px 3px rgb(185, 185, 185);
+    }
+
+    .post-owner {
+    display: flex; 
+    padding-top:20px;
+    }
+
+    .post-owner a {
+        font-size: 40px;
+        margin-left: 30px;
+    }
+
+    .avatar {
+    margin-top: 4px; 
+    margin-left: 14px; 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 60px;
+    }
+    
+    .like {
+        margin-top: 4px; 
+        margin-left: 30px; 
+        width: 60px; 
+        height: 60px;
+    }
+
+    .like-number {
+        font-size: 38px;
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+
+    .post-caption {
+        font-size: 38px;
+    }
+}

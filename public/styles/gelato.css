@@ -1,0 +1,261 @@
+@font-face {
+    font-family: UVNSachVo;
+    src: url(../fonts/UVNSachVo.TTF);
+}
+
+@font-face {
+    font-family: Masterplan;
+    src: url(../fonts/MASTERPLAN__.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: RockwellCondensed;
+    src: url(../fonts/ROCC____.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ArialRounded;
+    src: url(../fonts/ARLRDBD.TTF);
+    font-weight: bold;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flexbox;
+}
+
+.cover {
+    background-image: url("../images/GelatoCover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.gelato-text {
+    width: 45%;
+    margin-top: 30px;
+}
+
+.let-taste-text {
+    margin-top: 30px;
+    font-size: 22px;
+    width: 38%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'UVNSachVo';
+    margin-left: 70px;
+    color: white;
+}
+
+.let-taste-text button {
+    margin-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 30px;
+    width: 28%;
+    text-align: center;
+    font-family: 'Masterplan';
+    font-weight: bold;
+    color: rgb(196, 36, 36);
+    background: white;
+    border: 0px solid #333333;
+    border-radius: 4px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.products-cards {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    font-family: ArialRounded;
+    justify-content: center;
+}
+
+.product-card {
+    width: 23%;
+    margin-top: 40px;
+    margin-right: 50px;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.product-card img{
+    width: 100%;
+}
+
+.product-card ul {
+    align-self: center;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+.why-choose {
+    background-image: url("../images/WHY\ CHOOSE\ IVO\ DELI.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'UVNSachVo';
+    font-size: 30px;
+    color: white;
+}
+
+        
+.why-choose-text {
+    padding-left: 180px;
+}
+
+.quality-card {
+    display: flex;
+    height: 130px;
+}
+
+.quality-card ul {
+    font-family: ArialRounded;
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.icon-quality {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-quality-text {
+    margin-left: 20px;
+}
+
+.gelato-maps {
+    display: flex;
+    width: 100%;
+}
+
+.addresses {
+    width: 30%;
+    display: inline;
+}
+
+.address-card {
+    display: block;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px #888888;
+    font-family: ArialRounded;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+.maps-container {
+    background-image: url(../images/GelatoMaps.png);
+    width: 70%;
+    background-size: cover;
+}
+
+.address-card-text {
+    padding-left: 10px;
+}
+
+.hover-display {
+    opacity: 0;
+    width: 20%;
+    height: 100px;
+}
+
+.hover-display img {
+    display: none; 
+    width: 500px;
+}
+
+.hover-display:hover {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.hover-display:hover img {
+    margin-left: 10%;
+    display: inline;
+}
+
+.blank-space-resize {
+    width: 100%; 
+    height: 100px;
+}
+
+#shop-pct {
+    margin-top: 25%; margin-left: 30%;
+}
+
+#shop-nth {
+    margin-top: 4%; margin-left: 30%;
+}
+
+@media screen and (max-width:1150px) {
+    .blank-space-resize {
+        width: 100%; 
+        height: 52px;
+    }
+
+    .why-choose {
+        background-size: contain;
+    }
+
+            
+    .why-choose-text {
+        padding-left: 80px;
+    }
+
+    .quality-card {
+        display: flex;
+        height: 83px;
+    }
+    
+    .quality-card ul {
+        font-family: ArialRounded;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    
+    .icon-quality {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .icon-quality-text {
+        margin-left: 20px;
+    }
+
+    #btn-explore {
+        width: 40%;
+    }
+
+    .addresses {
+        display: none;
+    }
+
+    .gelato-maps {
+        width: 100%;
+        justify-content: center;
+        height: 600px;
+    }
+    .maps-container {
+        width: 100%;
+    }
+
+    .hover-display {
+        height: 50px;
+    }
+    #shop-nth {
+        margin-top: 6%;
+    }
+}

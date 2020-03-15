@@ -1,0 +1,63 @@
+{
+  "burgers": [
+    {
+      "titleVN": "Burger Gà Nướng Mật Ong",
+      "titleENG": "Grilled Chicken Burger with Honey",
+      "descriptionVN": "Bao gồm gà nướng mật ong, salad và rau củ",
+      "descriptionENG": "Included grilled chicken with honey, salad and veggies",
+      "price": "39.000đ",
+      "image": "Burger Gà Nướng Mật ong.jpg"
+    },
+    {
+      "titleVN": "Burger bò Wagyu Nhật",
+      "titleENG": "Japanese Wagyu Beef Burger",
+      "descriptionVN": "Bao gồm lát bò wagyu 120g, phô mai, rau củ và sốt",
+      "descriptionENG": "Included Wagyu Beef (weighted 120g), cheese, vegetables and sauce ",
+      "price": "99.000đ",
+      "image": "Burger Bò Nhật.jpg"
+    },
+    {
+      "titleVN": "Burger Nấm Kim Chi Chay",
+      "titleENG": "Vegetatian Enoki Mushroom Burger",
+      "descriptionVN": "Bao gồm rau củ, nấm kim chi và trứng",
+      "descriptionENG": "Included vegetable, enoki mushroom and egg",
+      "price": "39.000đ",
+      "image": "Burger Chay.jpg"
+    },
+    {
+      "titleVN": "Burger Nấm Kim Chi Ba Rọi Xông Khói ",
+      "titleENG": "Smoked Bacon Enoki Mushroom Burger",
+      "descriptionVN": "Bao gồm rau củ, nấm kim chi và ba rọi xông khói",
+      "descriptionENG": "Included vegetable, enoki mushroom and smoked bacon",
+      "price": "39.000đ",
+      "image": "Burger ba rọi nấm kim châm.jpg"
+    },
+    {
+      "titleVN": "Burger Ba Chỉ Bò Mỹ kèm sốt BBQ",
+      "titleENG": "USA Beef Belly Burger with BBQ Sauce",
+      "descriptionVN": "Bao gồm rau củ, ba chỉ bò Mỹ ăn kèm sốt BBQ",
+      "descriptionENG": "Included vegetable, beef belly with BBQ sauce",
+      "price": "39.000đ",
+      "image": "Burger Bò Mỹ BBQ.jpg.png"
+    }
+  ],
+  "pizzas": [],
+  "hotdogs": [
+    {
+      "titleVN": "Hotdog Heo",
+      "titleENG": "Pork Sausage Hotdog",
+      "descriptionVN": "Bao gồm rau củ và xúc xích heo",
+      "descriptionENG": "Included vegetable and pork sausage",
+      "price": "39.000đ",
+      "image": "Hotdog Heo.jpg"
+    },
+    {
+      "titleVN": "Hotdog Gà",
+      "titleENG": "Chicken Sausage Hotdog",
+      "descriptionVN": "Bao gồm rau củ và xúc xích gà",
+      "descriptionENG": "Included vegetable and chicken sausage",
+      "price": "39.000đ",
+      "image": "Hotdog Gà.jpg"
+    }
+  ]
+}

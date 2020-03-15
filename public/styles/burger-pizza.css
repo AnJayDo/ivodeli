@@ -1,0 +1,201 @@
+@font-face {
+    font-family: UVNSachVo;
+    src: url(../fonts/UVNSachVo.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Masterplan;
+    src: url(../fonts/MASTERPLAN__.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: RockwellCondensed;
+    src: url(../fonts/ROCC____.TTF);
+    font-weight: bold;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flexbox;
+}
+
+.cover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.taste-text {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.let-taste-text {
+    margin-top: 30px;
+    font-size: 22px;
+    width: 45%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'UVNSachVo';
+    margin-left: 70px;
+    color: white;
+}
+
+.let-taste-text button {
+    margin-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 30px;
+    width: 28%;
+    text-align: center;
+    font-family: 'Masterplan';
+    font-weight: bold;
+    color: rgb(196, 36, 36);
+    background: white;
+    border: 0px solid #333333;
+    border-radius: 4px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.products-cards {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 24%;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    font-family: UVNSachVo;
+    background-color: white;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 5px #333333;
+    justify-content: center;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.product-card img {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 96%;
+    border-radius: 20px;
+}
+
+.product-card-title {
+    float: left;
+    margin-left: 20px;
+    font-size: 30px;
+    color: #9b2929;
+    width: 90%;
+    white-space: pre-wrap;
+    overflow: auto;
+    height: 50px;
+    text-overflow: ellipsis;
+}
+.product-card-description {
+    float: left;
+    width: 90%;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #969696;
+}
+
+.product-card-price {
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 35px;
+    color: #9b2929;
+    margin-bottom: 20px;
+}
+
+.meat {
+    background-image: url("../images/MeatCover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'Masterplan';
+}
+
+.fresh-gelato {
+    background-image: url("../images/FRESH\ AND\ YUMMY.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'UVNSachVo';
+    font-size: 30px;
+    color: white;
+}
+
+#fresh-gelato {
+    padding-left: 130px;
+}
+
+.quality-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.icon-quality {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-quality-text {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.blank-space-resize {
+    width: 100%; 
+    height: 100px;
+}
+
+
+@media screen and (max-width:1150px) {
+    .meat {
+        background-size: contain;
+    }
+
+    .fresh-gelato {
+        background-size: contain;
+    }
+
+    .blank-space {
+        height: 150px;
+    }
+        
+    .icon-quality-text {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+        
+    .blank-space-resize {
+        width: 100%; 
+        height: 55px;
+    }
+
+    .icon-quality {
+        width: 60px;
+        height: 60px;
+    }
+
+    #fresh-gelato {
+        padding-left: 80px;
+    }
+}

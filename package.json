@@ -1,0 +1,32 @@
+{
+  "name": "iggirl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonAnger/iggirl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonAnger/iggirl/issues"
+  },
+  "homepage": "https://github.com/JasonAnger/iggirl#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "mongodb": "^3.5.4",
+    "mongoose": "^5.9.3",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7"
+  }
+}
