@@ -29,9 +29,11 @@
                     <li><a href="./gelato">GELATO</a></li>
                     <li><a href="./services">SERVICES</a></li>
                 </ul>
-                <div style="float: right; width: 50%;">
-                    <a href="#vie" style="float: right; margin-right: 50px; "><img style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
-                    <a href="#eng" style="float: right; margin-right: 20px; "><img style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
+                <div id="flags">
+                    <a href="./gelato#vie" id="vietnamese" style="float: right; margin-right: 50px; "><img
+                        style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
+                    <a href="./gelato#eng" id="english" style="float: right; margin-right: 20px; "><img
+                            style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
                 </div>
             </nav>
             <div class="gelato-text"><img style="margin-left: 5vw; width: 80%;" src="./images/FRESH AND YUMMY GELATO.png"></div>
@@ -74,10 +76,9 @@
             </div>
         </div>
         <div class="why-choose">
+            <div class="blank-space-resize"></div>
+            <div style="width: 60%; margin-left: 5%;"><img style="width: 100%;" src="./images/WHY CHOOSE IVO DELI TEXT.png"></div>
             <div class="why-choose-text">
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
                 <div class="quality-card">
                     <img class="icon-quality" src="./images/LogoHighRated.png">
                     <div>
@@ -119,11 +120,10 @@
                 <div class="blank-space-resize"></div>
                 <div class="blank-space-resize"></div>
                 <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
             </div>
         </div>
         <div>
-            <ul style="font-size: 90pt; font-family: 'Masterplan'; margin-left: 7vw; color: #6d3109;">WHERE TO TASTE</ul>
+            <ul id="where-to-taste">WHERE TO TASTE</ul>
             <div class="gelato-maps">
                 <div class="addresses">
                     <div class="address-card">
@@ -211,6 +211,16 @@
             </div>
         </footer>
     </div>
+    <script>
+        document.getElementById("vietnamese").onclick = function(){
+            window.location.hash = '#vie';
+            window.location.reload();
+        }
+        document.getElementById("english").onclick = function(){
+            window.location.hash = '#eng';
+            window.location.reload();
+        }
+    </script>
     <script>
         $(window).on("load", function () {
             document.getElementById("content").style= null;

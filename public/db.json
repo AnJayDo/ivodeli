@@ -41,7 +41,56 @@
       "image": "Burger Bò Mỹ BBQ.jpg.png"
     }
   ],
-  "pizzas": [],
+  "pizzas": [
+    {
+      "titleVN": "Pizza Phô Mai",
+      "titleENG": "Cheese Pizza",
+      "descriptionVN": "Bao gồm vỏ bánh và lớp phô mai",
+      "descriptionENG": "Included pizza with cheese",
+      "price": "119.000đ",
+      "image": "Pizza Phô Mai.jpg"
+    },
+    {
+      "titleVN": "Pizza Hawaiian",
+      "titleENG": "Hawaiian Pizza",
+      "descriptionVN": "Bao gồm phô mai, ớt chuông, dứa nướng và thịt ba rọi",
+      "descriptionENG": "Included cheese, bell pepper, grilled pineapple and bacon",
+      "price": "119.000đ",
+      "image": "Pizza Hawaiian.jpg"
+    },
+    {
+      "titleVN": "Pizza Bò Bằm",
+      "titleENG": "Minced Beef Pizza",
+      "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và bò bằm",
+      "descriptionENG": "Included cheese, bell pepper, potato and minced beef",
+      "price": "119.000đ",
+      "image": "Pizza Bò Bằm.jpg"
+    },
+    {
+      "titleVN": "Pizza Xúc Xích Heo",
+      "titleENG": "Pork Sausage Pizza",
+      "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và xúc xích heo",
+      "descriptionENG": "Included cheese, bell pepper, potato and pork sausage",
+      "price": "119.000đ",
+      "image": "Pizza Xúc Xích Heo.jpg"
+    },
+    {
+      "titleVN": "Pizza Ba Chỉ Bò Mỹ",
+      "titleENG": "USA Beef Belly Pizza",
+      "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và ba chỉ bò Mỹ",
+      "descriptionENG": "Included cheese, bell pepper, potato and USA beef belly",
+      "price": "119.000đ",
+      "image": "Pizza Ba Chỉ Bò Mỹ.jpg"
+    },
+    {
+      "titleVN": "Pizza Gà Nướng Mật Ong",
+      "titleENG": "Grilled Chicken with Honey Pizza",
+      "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và gà nướng mật ong",
+      "descriptionENG": "Included cheese, bell pepper, potato and grilled chicken with honey",
+      "price": "119.000đ",
+      "image": "Pizza Gà Nướng Mật Ong.jpg"
+    }
+  ],
   "hotdogs": [
     {
       "titleVN": "Hotdog Heo",

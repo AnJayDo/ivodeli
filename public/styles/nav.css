@@ -51,11 +51,18 @@ nav {
     transition: all 0.5s ease;
 }
 
+#flags {
+    float: right; width: 50%;
+}
+
 @media screen and (max-width:1100px) {
     .main-nav {
         display: none;
     }
     #burger-nav {
         display: inline;
+    }
+    #flags {
+        float: right; width: 80%;
     }
 }

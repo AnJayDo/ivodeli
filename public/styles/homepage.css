@@ -74,13 +74,15 @@ body {
 }
 
 .product-card {
-    width: 27%;
+    width: 24%;
     margin-top: 20px;
     transition: all 0.5s ease;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 .product-card:hover {
-    width: 32%;
+    width: 26%;
     margin-top: 5px;
     transition: all 0.5s ease;
 }

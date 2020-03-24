@@ -27,12 +27,11 @@
                     <li><a href="./gelato">GELATO</a></li>
                     <li><a href="./services">SERVICES</a></li>
                 </ul>
-                <div style="float: right; width: 50%;">
+                <div id="flags">
                     <a href="./burger#vie" id="vietnamese" style="float: right; margin-right: 50px; "><img
-                            style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
+                        style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
                     <a href="./burger#eng" id="english" style="float: right; margin-right: 20px; "><img
                             style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
-                    
                 </div>
             </nav>
             <div class="taste-text"><img style="margin-top: 70px; margin-left: 5vw; width: 80%;"
@@ -130,6 +129,16 @@
             </div>
         </footer>
     </div>
+    <script>
+        document.getElementById("vietnamese").onclick = function(){
+            window.location.hash = '#vie';
+            window.location.reload();
+        }
+        document.getElementById("english").onclick = function(){
+            window.location.hash = '#eng';
+            window.location.reload();
+        }
+    </script>
     <script src="loadImage.js"></script>
     <script>
         try {

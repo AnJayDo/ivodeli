@@ -166,9 +166,51 @@ body {
     height: 100px;
 }
 
+.blank-space {
+    width: 100%; 
+    height: 100px;
+}
+
+.create-pizza {
+    background-image: url("../images/Create\ Pizza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'UVNSachVo';
+    font-size: 30px;
+    color: white;
+}
+
+
+.quality-card {
+    display: flex;
+    height: 100px;
+    margin-left: 2%;
+}
+
+.quality-card ul {
+    font-family: ArialRounded;
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.icon-quality {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-quality-text {
+    margin-left: 20px;
+}
+
+#create-pizza-img {
+    width: 50%; display: flex; padding-left: 30px;
+}
 
 @media screen and (max-width:1150px) {
-    .meat {
+    .create-pizza {
         background-size: contain;
     }
 
@@ -181,7 +223,7 @@ body {
     }
         
     .icon-quality-text {
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: 20px;
     }
         
@@ -189,13 +231,36 @@ body {
         width: 100%; 
         height: 55px;
     }
-
+    
+    .quality-card {
+        display: flex;
+        height: 70px;
+        margin-left: 50px;
+    }
+    
+    .quality-card ul {
+        font-family: ArialRounded;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    
     .icon-quality {
+        margin-top: 10px;
         width: 60px;
         height: 60px;
     }
+    
+    .icon-quality-text {
+        margin-left: 20px;
+        font-size: 27px;
+    }
+
 
     #fresh-gelato {
         padding-left: 80px;
+    }
+    #create-pizza-img {
+        opacity: 0;
+        width: 10%;
     }
 }

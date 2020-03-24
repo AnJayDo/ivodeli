@@ -29,7 +29,6 @@ function loadVNBurger() {
                         <div class="product-card-description">${data[i*3].descriptionVN}</div>
                         <div class="product-card-price">${data[i*3].price}</div>
                     </div>`
-                    console.log(addInnerHtml)
                     if(data[i*3+1]) {
                         addInnerHtml+=`<div class="product-card">
                             <img src="./images/${data[(i*3)+1].image}">
@@ -47,7 +46,6 @@ function loadVNBurger() {
                         </div>` 
                     }
                     addInnerHtml+=`</div>`
-                    console.log(addInnerHtml)
                     document.getElementById(`products-cards-burger`).innerHTML += addInnerHtml
                 }
             }
@@ -70,7 +68,6 @@ function loadENGBurger() {
                         <div class="product-card-description">${data[i*3].descriptionENG}</div>
                         <div class="product-card-price">${data[i*3].price}</div>
                     </div>`
-                    console.log(addInnerHtml)
                     if(data[i*3+1]) {
                         addInnerHtml+=`<div class="product-card">
                             <img src="./images/${data[(i*3)+1].image}">
@@ -88,7 +85,6 @@ function loadENGBurger() {
                         </div>` 
                     }
                     addInnerHtml+=`</div>`
-                    console.log(addInnerHtml)
                     document.getElementById(`products-cards-burger`).innerHTML += addInnerHtml
                 }
             }
@@ -111,7 +107,6 @@ function loadVNHotdog() {
                         <div class="product-card-description">${data[i*3].descriptionVN}</div>
                         <div class="product-card-price">${data[i*3].price}</div>
                     </div>`
-                    console.log(addInnerHtml)
                     if(data[i*3+1]) {
                         addInnerHtml+=`<div class="product-card">
                             <img src="./images/${data[(i*3)+1].image}">
@@ -129,7 +124,6 @@ function loadVNHotdog() {
                         </div>` 
                     }
                     addInnerHtml+=`</div>`
-                    console.log(addInnerHtml)
                     document.getElementById(`products-cards-hotdog`).innerHTML += addInnerHtml
                 }
             }
@@ -152,7 +146,6 @@ function loadENGHotdog() {
                         <div class="product-card-description">${data[i*3].descriptionENG}</div>
                         <div class="product-card-price">${data[i*3].price}</div>
                     </div>`
-                    console.log(addInnerHtml)
                     if(data[i*3+1]) {
                         addInnerHtml+=`<div class="product-card">
                             <img src="./images/${data[(i*3)+1].image}">
@@ -170,7 +163,6 @@ function loadENGHotdog() {
                         </div>` 
                     }
                     addInnerHtml+=`</div>`
-                    console.log(addInnerHtml)
                     document.getElementById(`products-cards-hotdog`).innerHTML += addInnerHtml
                 }
             }
@@ -190,3 +182,85 @@ if(document.getElementById(`products-cards-hotdog`)) {
 }
 
 
+function loadVNPizza() {
+    try {
+        loadJSON((res) => {
+            var data = JSON.parse(res).pizzas
+            for(let i=0;i<3;i++) {
+                if(data[i*3]) {
+                    
+                    var addInnerHtml = `<div class="products-cards">
+                    <div class="product-card">
+                        <img src="./images/${data[i*3].image}">
+                        <div class="product-card-title">${data[i*3].titleVN}</div>
+                        <div class="product-card-description">${data[i*3].descriptionVN}</div>
+                        <div class="product-card-price">${data[i*3].price}</div>
+                    </div>`
+                    if(data[i*3+1]) {
+                        addInnerHtml+=`<div class="product-card">
+                            <img src="./images/${data[(i*3)+1].image}">
+                            <div class="product-card-title">${data[(i*3)+1].titleVN}</div>
+                            <div class="product-card-description">${data[(i*3)+1].descriptionVN}</div>
+                            <div class="product-card-price">${data[(i*3)+1].price}</div>
+                        </div>` 
+                    }
+                    if(data[i*3+2]) {
+                        addInnerHtml+=`<div class="product-card">
+                            <img src="./images/${data[(i*3)+2].image}">
+                            <div class="product-card-title">${data[(i*3)+2].titleVN}</div>
+                            <div class="product-card-description">${data[(i*3)+2].descriptionVN}</div>
+                            <div class="product-card-price">${data[(i*3)+2].price}</div>
+                        </div>` 
+                    }
+                    addInnerHtml+=`</div>`
+                    document.getElementById(`products-cards-pizza`).innerHTML += addInnerHtml
+                }
+            }
+        })
+    } catch (error) { }
+}
+
+
+function loadENGPizza() {
+    try {
+        loadJSON((res) => {
+            var data = JSON.parse(res).pizzas
+            for(let i=0;i<3;i++) {
+                if(data[i*3]) {
+                    
+                    var addInnerHtml = `<div class="products-cards">
+                    <div class="product-card">
+                        <img src="./images/${data[i*3].image}">
+                        <div class="product-card-title">${data[i*3].titleENG}</div>
+                        <div class="product-card-description">${data[i*3].descriptionENG}</div>
+                        <div class="product-card-price">${data[i*3].price}</div>
+                    </div>`
+                    if(data[i*3+1]) {
+                        addInnerHtml+=`<div class="product-card">
+                            <img src="./images/${data[(i*3)+1].image}">
+                            <div class="product-card-title">${data[(i*3)+1].titleENG}</div>
+                            <div class="product-card-description">${data[(i*3)+1].descriptionENG}</div>
+                            <div class="product-card-price">${data[(i*3)+1].price}</div>
+                        </div>` 
+                    }
+                    if(data[i*3+2]) {
+                        addInnerHtml+=`<div class="product-card">
+                            <img src="./images/${data[(i*3)+2].image}">
+                            <div class="product-card-title">${data[(i*3)+2].titleENG}</div>
+                            <div class="product-card-description">${data[(i*3)+2].descriptionENG}</div>
+                            <div class="product-card-price">${data[(i*3)+2].price}</div>
+                        </div>` 
+                    }
+                    addInnerHtml+=`</div>`
+                    document.getElementById(`products-cards-pizza`).innerHTML += addInnerHtml
+                }
+            }
+        })
+    } catch (error) { }
+}
+
+
+if(document.getElementById(`products-cards-pizza`)) {
+    if(location.hash=="#vie") loadVNPizza()
+    else loadENGPizza()
+}

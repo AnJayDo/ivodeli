@@ -5,27 +5,17 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="./images/IVO logo thumbnail.jpg">
-    <link rel="stylesheet" type="text/css" href="styles/loader.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/homepage.css">
+    <link rel="stylesheet" type="text/css" href="styles/burger-pizza.css">
 </head>
 
 <body>
-    <div class="loader-wrapper" id="loader-wrapper">
-        <span class="loader">
-            <div class="loading-burger slide-in-top-4"><img style="width: 100%;" src="./images/Burger 4.png"></div>
-            <div class="loading-burger slide-in-top-3"><img style="width: 100%;" src="./images/Burger 3.png"></div>
-            <div class="loading-burger slide-in-top-2"><img style="width: 100%;" src="./images/Burger 2.png"></div>
-            <div class="loading-burger slide-in-top-1"><img style="width: 100%;" src="./images/Burger 1.png"></div>
-        </span>
-    </div>
     <div id="content" style="display: none;">
         <div class="burger-navigator">
-            <div><img id="burger-nav"
-                    src="./images/Burger Icon.png"></div>
+            <div><img id="burger-nav" src="./images/Burger Icon.png"></div>
         </div>
-        <div class="cover">
+        <div style="background-image: url('../images/PizzaCover.png');" class="cover">
             <nav class="nav-bar">
                 <div style="padding-left: 50px;">
                     <a href="./home"><img style="width: 80px;" src="./images/logo.png" alt="Ivo Deli" class="logo"></a>
@@ -37,70 +27,65 @@
                     <li><a href="./gelato">GELATO</a></li>
                     <li><a href="./services">SERVICES</a></li>
                 </ul>
-                <div style="float: right; width: 50%;">
-                    <a href="#vie" style="float: right; margin-right: 50px; "><img style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
-                    <a href="#eng" style="float: right; margin-right: 20px; "><img style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
+                <div id="flags">
+                    <a href="./pizza#vie" id="vietnamese" style="float: right; margin-right: 50px; "><img
+                            style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
+                    <a href="./pizza#eng" id="english" style="float: right; margin-right: 20px; "><img
+                            style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
+                    
                 </div>
             </nav>
-            <div class="taste-text"><img style="margin-top: 70px; margin-left: 5vw; width: 80%;" src="./images/Tatse-text.png"></div>
+            <div class="taste-text"><img style="margin-left: 8vw; width: 70%;"
+                    src="./images/Local pizza local diffrences.png"></div>
             <div class="let-taste-text">
-                <ul>Let’s taste the best burger in town with the fairest price</ul>
                 <button id="btn-explore">CHECK IT OUT</button>
+                <script>
+                    if (window.location.hash) {
+                        if (window.location.hash == "#vie") {
+                            document.getElementById("texttaste").textContent = "Cùng thường thức chiếc Burger ngon nhất nào"
+                        }
+                        if (window.location.hash == "#eng") {
+                            document.getElementById("texttaste").textContent = "Let’s taste the best burger in town with the fairest price"
+                        }
+                    }
+                </script>
             </div>
-            <div class="products-cards" id="products-cards">
-                <a class="product-card" href="./burger"><img style="width: 100%;" src="images/Burgers-card.png"></a>
-                <a class="product-card"><img style="width: 100%;" src="images/Hotdogs-card.png"></a>
-                <a class="product-card" href="./gelato"><img style="width: 100%;" src="images/Gelato-card.png"></a>
+            <div class="blank-space-resize"></div>
+            <div class="products-cards" id="products-cards-pizza" style="display: inline;">
             </div>
-        </div>
-        <div class="meat">
-            <div style="width: 100%; display: flex; padding-top: 8%; padding-left: 30px;">
-                <img style="width: 55%" src="./images/Provide-Text.png">
-            </div>
-            <ul style="font-family: 'UVNSachVo'; color: #e3e3e3; margin-left: 30px; margin-top: 30px; font-size: 19px; color: darkgray;">All meat we’re
-                using is bought once every 2 morning</br>
-                and chosen very carefully.</br>
-                We provide delicious burgers with good meat</br>
-                for pleasing our customers.</ul>
-            <div class="blank-space-resize"></div>
-            <div class="blank-space-resize"></div>
-            <div class="blank-space-resize"></div>
             <div class="blank-space-resize"></div>
         </div>
-
-        <div class="fresh-gelato">
-            <div id="fresh-gelato">
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/LogoHighRated.png">
-                    <div class="icon-quality-text">Highly rated</div>
+        <div class="create-pizza" >
+            <div class="blank-space-resize"></div>
+            <div id="create-pizza-img">
+                <img style="width: 60%" src="./images/Create your own Pizza Text.png">
+            </div>
+            <div class="quality-card" >
+                <img class="icon-quality" src="./images/Icon Mix the pizza.png">
+                <div>
+                    <div class="icon-quality-text">Mix the pizzas</div>
+                    <ul>You can select choose toppings 
+                    </br>for each half</ul>
                 </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-DailyMade.png">
-                    <div class="icon-quality-text">Daily made</div>
+            </div>
+            <div class="quality-card">
+                <img class="icon-quality" src="./images/Icon Additional.png">
+                <div>
+                    <div class="icon-quality-text">Many additional optionals</div>
+                    <ul>Add more things to your pizza with </br>
+                        our additional options</ul>
                 </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-HighQualityControl.png">
-                    <div class="icon-quality-text">High quality control</div>
-                </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-Natural.png">
-                    <div class="icon-quality-text">100% Natural</div>
-                </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-Italian.png">
+            </div>
+            <div class="quality-card">
+                <img class="icon-quality" src="./images/Icon Ytaly.png">
+                <div>
                     <div class="icon-quality-text">Italian recipes</div>
+                    <ul>Italian recipes using imported</br>
+                        ingredients.</ul>
                 </div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
             </div>
-        </div>
-        <div>
-            <ul style="font-size: 90pt; font-family: 'Masterplan'; margin-left: 7vw; color: #6d3109;">WHERE ARE WE</ul>
-            
+            <div class="blank-space-resize"></div>
+            <div class="blank-space"></div>
         </div>
         <footer>
             <div style="width: 100%;">
@@ -114,17 +99,17 @@
                         <ul style="color: #e74e4e; font-size: 30px;">Hội An</ul>
                         <ul>54 Nguyễn Thị Minh Khai street, Cẩm Phô</ul>
                     </div>
-                    <div  style="margin-left: 30px; display: grid; width: 20%;">
+                    <div style="margin-left: 30px; display: grid; width: 20%;">
                         <ul style="color: #e74e4e; font-size: 30px;">Products</ul>
                         <a class="link" href="./burger">Burgers</a>
                         <a class="link" href="./pizza">Pizzas</a>
-                        <a class="link" >Hotdogs</a>
+                        <a class="link">Hotdogs</a>
                         <a class="link" href="./gelato">Gelato</a>
                         <a class="link" href="./services">Services</a>
                     </div>
                     <div style="margin-left: 30px; width: 40%;">
                         <ul style="color: #e74e4e; font-size: 30px;">Contact</ul>
-                        <ul>Tel:  0905 776 415</ul>
+                        <ul>Tel: 0905 776 415</ul>
                         <ul>Mail: aroa1lqd@gmail.com</ul>
                         <ul style="color: #e74e4e; font-size: 30px;">Head Quarter</ul>
                         <ul>20 Trần Tống street, Thanh Khê district, Đà Nẵng city </ul>
@@ -133,30 +118,47 @@
                 <div style="margin-top: 40px; display: flex;">
                     <div style="width: 55%;">
                         <div style="display: flex;">
-                            <a href="https://www.facebook.com/ivodelidanang/" style="margin-right: 25px;"><img src="./images/logo-fb.png"></ul></a>
-                            <a href="https://www.instagram.com/ivodeli/" style="margin-right: 25px;"><img src="./images/logo-ig.png"></ul></a>
-                            <a href="https://www.foody.vn/thuong-hieu/ivo-deli-banh-mi-hotdog-kem-y-gelato" style="margin-right: 25px;"><img src="./images/logo-foody.png"></ul></a>
-                            <a href="https://food.grab.com/vn/en/restaurant/ivo-deli-burger-kem-%C3%BD-gelato-l%C3%AA-th%C3%A1nh-t%C3%B4n-delivery/VNGFVN000008kt" style="margin-right: 25px;"><img src="./images/logo-grabfood.png"></ul></a>
+                            <a href="https://www.facebook.com/ivodelidanang/" style="margin-right: 25px;"><img
+                                    src="./images/logo-fb.png"></ul></a>
+                            <a href="https://www.instagram.com/ivodeli/" style="margin-right: 25px;"><img
+                                    src="./images/logo-ig.png"></ul></a>
+                            <a href="https://www.foody.vn/thuong-hieu/ivo-deli-banh-mi-hotdog-kem-y-gelato"
+                                style="margin-right: 25px;"><img src="./images/logo-foody.png"></ul></a>
+                            <a href="https://food.grab.com/vn/en/restaurant/ivo-deli-burger-kem-%C3%BD-gelato-l%C3%AA-th%C3%A1nh-t%C3%B4n-delivery/VNGFVN000008kt"
+                                style="margin-right: 25px;"><img src="./images/logo-grabfood.png"></ul></a>
                         </div>
-                        <div style="display: flex; font-family: 'UVNHongHaHep'; color: #b3b3b3; font-size: 18px; margin-top: 20px;">
+                        <div
+                            style="display: flex; font-family: 'UVNHongHaHep'; color: #b3b3b3; font-size: 18px; margin-top: 20px;">
                             <ul style="margin-right: 40px;">Copyright 2020, IVO DELI by Jason Anger</ul>
                             <ul style="margin-right: 40px;">Privacy</ul>
                             <ul style="margin-right: 40px;">Term of Service</ul>
                         </div>
                     </div>
-                    <div style="width: 45%;"><a id="back-to-top"><img style="float: right;" src="./images/Back to TOP.png"></a></div>
+                    <div style="width: 45%;"><a id="back-to-top"><img style="float: right;"
+                                src="./images/Back to TOP.png"></a></div>
                 </div>
                 <div style="height: 30px; width: 100%;"></div>
             </div>
         </footer>
     </div>
     <script>
+        document.getElementById("vietnamese").onclick = function(){
+            window.location.hash = '#vie';
+            window.location.reload();
+        }
+        document.getElementById("english").onclick = function(){
+            window.location.hash = '#eng';
+            window.location.reload();
+        }
+    </script>
+    <script src="loadImage.js"></script>
+    <script>
         try {
-            $(window).on("load", window.setTimeout(function () {
-            $(".loader-wrapper").fadeOut("slow");
-            document.getElementById("content").style= null;
-            }, 1500)); 
-        } catch(e) {};
+            $(window).on("load", function () {
+                $(".loader-wrapper").fadeOut("slow");
+                document.getElementById("content").style = null;
+            });
+        } catch (e) { };
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -172,11 +174,11 @@
         document.getElementById("back-to-top").onclick = function () {
             $('html, body').animate({ scrollTop: 0 }, 1000);
         };
-        document.onscroll = function () { 
-            if (scrollY>500) {
-                document.getElementById("burger-nav").style.display="inline";
-            } else if(innerWidth>1100) document.getElementById("burger-nav").style.display="none";
-                    else {}
+        document.onscroll = function () {
+            if (scrollY > 500) {
+                document.getElementById("burger-nav").style.display = "inline";
+            } else if (innerWidth > 1100) document.getElementById("burger-nav").style.display = "none";
+            else { }
         }
     </script>
 </body>

@@ -82,7 +82,8 @@ body {
 .product-card {
     width: 23%;
     margin-top: 40px;
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     transition: all 0.5s ease;
     display: block;
 }
@@ -200,6 +201,10 @@ body {
     margin-top: 4%; margin-left: 30%;
 }
 
+#where-to-taste {
+    font-size: 140px; font-family: 'Masterplan'; margin-left: 7vw; color: #6d3109;
+}
+
 @media screen and (max-width:1150px) {
     .blank-space-resize {
         width: 100%; 
@@ -213,26 +218,29 @@ body {
             
     .why-choose-text {
         padding-left: 80px;
+        margin-top: 0px;
     }
 
     .quality-card {
         display: flex;
-        height: 83px;
+        height: 70px;
     }
     
     .quality-card ul {
         font-family: ArialRounded;
-        font-size: 18px;
+        font-size: 15px;
         margin-left: 20px;
     }
     
     .icon-quality {
-        width: 80px;
-        height: 80px;
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
     }
     
     .icon-quality-text {
         margin-left: 20px;
+        font-size: 27px;
     }
 
     #btn-explore {
@@ -257,5 +265,8 @@ body {
     }
     #shop-nth {
         margin-top: 6%;
+    }
+    #where-to-taste {
+        font-size: 90px;
     }
 }

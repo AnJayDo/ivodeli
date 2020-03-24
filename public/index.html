@@ -36,47 +36,22 @@
                     <li><a href="./gelato">GELATO</a></li>
                     <li><a href="./services">SERVICES</a></li>
                 </ul>
-                <div style="float: right; width: 50%;">
+                <div id="flags">
                     <a href="#vie" id="vietnamese" style="float: right; margin-right: 50px; "><img
                             style="height: 40px; padding-top: 10px;" src="images/Vie-icon.jpg"></a>
                     <a href="#eng" id="english" style="float: right; margin-right: 20px; "><img
                             style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
-                    <script>
-                        document.getElementById("vietnamese").onclick = function () {
-                            if (window.location.hash) {
-                                if (window.location.hash == "#vie") {
-                                    document.getElementById("meat-text").innerHTML = "Tất cả thịt chúng tôi sử dụng đều được mua mới đều đặn</br>và lựa chọn vô cùng kĩ lưỡng.</br>Chúng tôi phục vụ những chiếc bánh burger ngon nhất</br>với loại thịt tối nhất để làm hài lòng thực khách."
-                                    document.getElementById("icon-quality-text-1").innerHTML = "Chất lượng cao"
-                                    document.getElementById("icon-quality-text-2").innerHTML = "Được làm hằng ngày"
-                                    document.getElementById("icon-quality-text-3").innerHTML = "Được kiểm soát chặc chẽ"
-                                    document.getElementById("icon-quality-text-4").innerHTML = "100% tự nhiên"
-                                    document.getElementById("icon-quality-text-5").innerHTML = "Công thức Ý"
-                                }
-                            }
-                        }
-                        document.getElementById("english").onclick = function () {
-                            if (window.location.hash) {
-                                if (window.location.hash == "#eng") {
-                                    document.getElementById("meat-text").innerHTML = "All meat we're</br>using is bought once every 2 morning</br>and chosen very carefully.</br>We provide delicious burgers with good meat</br>for pleasing our customers."
-                                }
-                            }
-                        }
-                    </script>
                 </div>
             </nav>
-            <div class="taste-text"><img style="margin-top: 70px; margin-left: 5vw; width: 80%;"
-                    src="./images/Tatse-text.png"></div>
-            <div class="let-taste-text">
-                <ul>Let’s taste the best burger in town with the fairest price</ul>
-                <button id="btn-explore">CHECK IT OUT</button>
-            </div>
+            <div class="cover-container"><div style="background-color: black; display: block; border-radius: 30px; width: 86%; height: 700px; margin-left: 7%; margin-top: 50px;"></div></div>
             <div class="products-cards" id="products-cards">
                 <a class="product-card" href="./burger"><img style="width: 100%;" src="images/Burgers-card.png"></a>
-                <a class="product-card"><img style="width: 100%;" src="images/Hotdogs-card.png"></a>
+                <a class="product-card" href="./pizza"><img style="width: 100%;" src="images/Pizzas-card.png"></a>
                 <a class="product-card" href="./gelato"><img style="width: 100%;" src="images/Gelato-card.png"></a>
             </div>
+            <div class="blank-space-resize"></div>
         </div>
-        <div class="meat">
+        <div class="meat" style="margin-top: 100px;">
             <div style="width: 100%; display: flex; padding-top: 8%; padding-left: 30px;">
                 <img style="width: 55%" src="./images/Provide-Text.png">
             </div>
@@ -181,6 +156,26 @@
             </div>
         </footer>
     </div>
+    <script>
+        document.getElementById("vietnamese").onclick = function(){
+            window.location.hash = '#vie';
+            window.location.reload();
+        }
+        document.getElementById("english").onclick = function(){
+            window.location.hash = '#eng';
+            window.location.reload();
+        }
+    </script>
+    <script>
+        if (window.location.hash == "#vie") {
+            document.getElementById("meat-text").innerHTML = "Tất cả thịt chúng tôi sử dụng đều được mua mới đều đặn</br>và lựa chọn vô cùng kĩ lưỡng.</br>Chúng tôi phục vụ những chiếc bánh burger ngon nhất</br>với loại thịt tối nhất để làm hài lòng thực khách."
+            document.getElementById("icon-quality-text-1").innerHTML = "Chất lượng cao"
+            document.getElementById("icon-quality-text-2").innerHTML = "Được làm hằng ngày"
+            document.getElementById("icon-quality-text-3").innerHTML = "Được kiểm soát chặc chẽ"
+            document.getElementById("icon-quality-text-4").innerHTML = "100% tự nhiên"
+            document.getElementById("icon-quality-text-5").innerHTML = "Công thức Ý"
+        }
+    </script>
     <script>
         try {
             $(window).on("load", window.setTimeout(function () {
