@@ -27,7 +27,7 @@ body {
 }
 
 .cover {
-    background-image: url("../images/BurgerCover.png");
+    background-image: url("../images/ServicesCover.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
@@ -69,12 +69,11 @@ body {
 .products-cards {
     display: flex;
     width: 100%;
-    margin-top: 50px;
     justify-content: center;
 }
 
 .product-card {
-    width: 24%;
+    width: 15%;
     margin-top: 20px;
     transition: all 0.5s ease;
     margin-right: 2%;
@@ -82,8 +81,8 @@ body {
 }
 
 .product-card:hover {
-    width: 26%;
-    margin-top: 5px;
+    width: 15.5%;
+    margin-top: 0px;
     transition: all 0.5s ease;
 }
 
@@ -142,8 +141,8 @@ body {
     overflow: hidden;
   }
   .middle{
-    margin-top: 340px;
     position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
