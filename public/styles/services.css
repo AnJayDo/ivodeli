@@ -86,13 +86,42 @@ body {
     transition: all 0.5s ease;
 }
 
-.meat {
-    background-image: url("../images/MeatCover.png");
+.find-on {
+    text-align: center; 
+    margin-top: 70px; 
+    width: 100%;
+    font-family: 'Masterplan';
+    background-image: url("../images/Shape1.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    font-family: 'Masterplan';
+}
+
+.channel-card {
+    width: 14%;
+    margin-top: 30px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 0 0 8px 2px #9c9c9c;
+}
+
+.channel-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.channel-card a ul{
+    margin-top: 20px;
+}
+
+.channel-card a img{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70%;
+    justify-items: center;
 }
 
 .fresh-gelato {
@@ -202,10 +231,6 @@ body {
   }
 
 @media screen and (max-width:1150px) {
-    .meat {
-        background-size: contain;
-    }
-
     .fresh-gelato {
         background-size: contain;
     }
