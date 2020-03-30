@@ -22,6 +22,15 @@
     </div>
     <div id="content" style="display: none;">
         <div class="burger-navigator">
+            <div class="navigator-box" id="navigator-box">
+                <ul class="navigator-box-list">
+                    <li class="slide-left"><a href="./home">HOME</a></li>
+                    <li class="slide-left"><a href="./burger">BURGER</a></li>
+                    <li class="slide-left"><a href="./pizza">PIZZA</a></li>
+                    <li class="slide-left"><a href="./gelato">GELATO</a></li>
+                    <li class="slide-left"><a href="./services">SERVICES</a></li>
+                </ul>
+            </div>
             <div><img id="burger-nav" src="./images/Burger Icon.png"></div>
         </div>
         <div class="cover">
@@ -80,9 +89,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 100px;" >
-                <ul style="font-size: 90pt; font-family: 'Masterplan'; color: #ffffff;">here we have</ul>\
             </div>
             <div class="products-cards" id="products-cards">
                 <a class="product-card" href="./burger"><img style="width: 100%;" src="images/Burgers-card.png"></a>
@@ -197,6 +203,8 @@
         </footer>
     </div>
     <script>
+    </script>
+    <script>
         setTimeout(function () {
             for (let i = 0; i < 5; i++) {
                 setInterval(function () {
@@ -240,15 +248,5 @@
             })
         });
     </script>
-    <script>
-        document.getElementById("back-to-top").onclick = function () {
-            $('html, body').animate({ scrollTop: 0 }, 1000);
-        };
-        document.onscroll = function () {
-            if (scrollY > 500) {
-                document.getElementById("burger-nav").style.display = "inline";
-            } else if (innerWidth > 1100) document.getElementById("burger-nav").style.display = "none";
-            else { }
-        }
-    </script>
+    <script src="burger-nav.js"></script>
 </body>

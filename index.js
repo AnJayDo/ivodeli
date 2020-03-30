@@ -47,10 +47,15 @@ app.get('/services', function(req,res){
 
 app.use('/admin', adminRouter)
 
-app.use('/*', function(req,res){
+
+app.use('/error', function(req,res){
     res.sendFile(path.join(__dirname+'/public/error.html'))
-    res.redirect('/')
 })
+
+app.use('/*', function(req,res){
+    res.redirect('/error')
+})
+
 
 app.listen(port, function() {
     console.log('Listening on port',port)

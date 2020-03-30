@@ -13,6 +13,15 @@
 <body>
     <div id="content" style="display: none;">
         <div class="burger-navigator">
+            <div class="navigator-box" id="navigator-box">
+                <ul class="navigator-box-list">
+                    <li class="slide-left"><a href="./home">HOME</a></li>
+                    <li class="slide-left"><a href="./burger">BURGER</a></li>
+                    <li class="slide-left"><a href="./pizza">PIZZA</a></li>
+                    <li class="slide-left"><a href="./gelato">GELATO</a></li>
+                    <li class="slide-left"><a href="./services">SERVICES</a></li>
+                </ul>
+            </div>
             <div><img id="burger-nav" src="./images/Burger Icon.png"></div>
         </div>
         <div style="background-image: url('../images/PizzaCover.png');" class="cover">
@@ -167,18 +176,5 @@
             })
         });
     </script>
-    <script>
-        document.getElementById("btn-explore").onclick = function () {
-            $('html, body').animate({ scrollTop: $('.products-cards').offset().top }, 1000);
-        };
-        document.getElementById("back-to-top").onclick = function () {
-            $('html, body').animate({ scrollTop: 0 }, 1000);
-        };
-        document.onscroll = function () {
-            if (scrollY > 500) {
-                document.getElementById("burger-nav").style.display = "inline";
-            } else if (innerWidth > 1100) document.getElementById("burger-nav").style.display = "none";
-            else { }
-        }
-    </script>
+    <script src="burger-nav.js"></script>
 </body>
