@@ -74,18 +74,23 @@ body {
 
 .product-card {
     width: 15%;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 25px;
+    margin-left: 25px;
     transition: all 0.5s ease;
-    margin-right: 2%;
-    margin-left: 2%;
+    display: block;
 }
 
-.product-card:hover {
-    width: 15.5%;
-    margin-top: 0px;
-    transition: all 0.5s ease;
+.product-card img{
+    width: 100%;
 }
 
+.product-card ul {
+    align-self: center;
+    font-family: 'Masterplan';
+    font-size: 35px;
+    text-align: center;
+}
 .find-on {
     text-align: center; 
     margin-top: 70px; 

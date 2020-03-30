@@ -64,14 +64,36 @@
             </div>
             <div class="blank-space-resize"></div>
         </div>
+        </div><div class="unique-product">
+            <div  style="width: 50%; font-family: 'UVNSachVo'; margin-left: 50px;">
+                <div class="unique-product-title">OUR UNIQUE PRODUCT</div>
+                <div class="unique-product-description" id="unique-product-description">You have Pizza on top of your Burger.</br>
+                    You can choose your top and your middle your own.</br>
+                    We call it Pizza Burger.
+                </div>
+                <div class="top-middle-text">TOP</div>
+                <div style="display: flex; margin-left: 30px;">
+                    <div class="burger-pizza-card"><img src="./images/IconMincedBeef.jpg"><div id="minced-beef-text">Minced Beef</div></div>
+                    <div class="burger-pizza-card"><img src="./images/IconSausage.jpg"><div id="sausage-text">Sausage</div></div>
+                    <div class="burger-pizza-card"><img src="./images/IconSmokedBacon.jpg"><div id="smoked-bacon-text">Smoked Bacon</div></div>
+                </div>
+                <div class="top-middle-text">MIDDLE</div>
+                <div style="display: flex; margin-left: 30px;">
+                    <div class="burger-pizza-card"><img src="./images/IconSmokedBacon.jpg"><div id="smoked-bacon-text-2">Smoked Bacon</div></div>
+                    <div class="burger-pizza-card"><img src="./images/IconBeefBelly.jpg"><div id="beef-belly-text">Beef Belly</div></div>
+                    <div class="burger-pizza-card"><img src="./images/IconBeefPatty.jpg"><div id="beef-patty-text">Beef Patty</div></div>
+                </div>
+            </div>
+            <div style="width: 50%;"><img style="width: 100%;" src="./images/PizzaBurger.png"></div>
+        </div>
+        <div class="blank-space-resize"></div>
         <div class="meat">
             <div style="width: 100%; display: flex; padding-top: 8%; padding-left: 30px;">
                 <img style="width: 55%" src="./images/Provide-Text.png">
             </div>
-            <ul id=""
+            <ul id="meat-text"
                 style="font-family: 'UVNSachVo'; color: #e3e3e3; margin-left: 30px; margin-top: 30px; font-size: 19px; color: darkgray;">
-                All meat we’re
-                using is bought once every 2 morning</br>
+                All meat we’re using is bought once every 2 morning</br>
                 and chosen very carefully.</br>
                 We provide delicious burgers with good meat</br>
                 for pleasing our customers.</ul>
@@ -80,10 +102,10 @@
             <div class="blank-space-resize"></div>
             <div class="blank-space-resize"></div>
         </div>
-
         <div id="products-cards-hotdog">
             <ul style="font-size: 90pt; font-family: 'Masterplan'; margin-left: 7vw; color: #6d3109;">We also have HOTDOGS</ul>
         </div>
+        <div class="blank-space-resize"></div>
         <footer>
             <div style="width: 100%;">
                 <div class="blank-space-footer"></div>
@@ -151,6 +173,16 @@
             setTimeout(function() { 
                 $('html, body').animate({ scrollTop: document.getElementById('products-cards-hotdog').offsetTop }, 1000); 
                 },500)
+        }
+        if (window.location.hash == "#vie") {
+            document.getElementById("unique-product-description").innerHTML = "Bạn sẽ được thêm một lớp Pizza phía trên Burger.</br>Chúng tôi gọi nó là Pizza Burger."
+            document.getElementById("meat-text").innerHTML = "Tất cả thịt chúng tôi sử dụng đều được mua mới đều đặn</br>và lựa chọn vô cùng kĩ lưỡng.</br>Chúng tôi phục vụ những chiếc bánh burger ngon nhất</br>với loại thịt tối nhất để làm hài lòng thực khách."
+            document.getElementById("minced-beef-text").innerHTML = "Bò bằm"
+            document.getElementById("sausage-text").innerHTML = "Xúc xích"
+            document.getElementById("smoked-bacon-text").innerHTML = "Bò xông khói"
+            document.getElementById("smoked-bacon-text-2").innerHTML = "Bò xông khói"
+            document.getElementById("beef-belly-text").innerHTML = "Ba chỉ bò Mỹ"
+            document.getElementById("beef-patty-text").innerHTML = "Lát bò"
         }
     </script>
     <script src="loadImage.js"></script>

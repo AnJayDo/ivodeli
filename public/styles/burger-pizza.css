@@ -212,6 +212,115 @@ body {
     width: 50%; display: flex; padding-left: 30px;
 }
 
+
+.gelato-maps {
+    display: flex;
+    width: 100%;
+}
+
+.addresses {
+    width: 30%;
+    display: inline;
+}
+
+.address-card {
+    display: block;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px #888888;
+    font-family: ArialRounded;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+.maps-container {
+    background-image: url(../images/GelatoMaps.png);
+    width: 70%;
+    background-size: cover;
+}
+
+.address-card-text {
+    padding-left: 10px;
+}
+
+.hover-display {
+    opacity: 0;
+    width: 20%;
+    height: 100px;
+}
+
+.hover-display img {
+    display: none; 
+    width: 500px;
+}
+
+.hover-display:hover {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.hover-display:hover img {
+    margin-left: 10%;
+    display: inline;
+}
+
+.blank-space-resize {
+    width: 100%; 
+    height: 100px;
+}
+
+#shop-pct {
+    margin-top: 25%; margin-left: 30%;
+}
+
+#shop-nth {
+    margin-top: 4%; margin-left: 30%;
+}
+
+#where-to-taste {
+    font-size: 140px; font-family: 'Masterplan'; margin-left: 7vw; color: #ad2f16;
+}
+
+#products-cards-hotdog {
+    background-image: url("../images/Shape1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.unique-product {
+    width: 100%;
+    display: flex;
+}
+
+.unique-product-title {
+    font-size: 140px; font-family: 'Masterplan'; color: #8a210c;
+}
+
+.unique-product-description {
+    font-size: 30px; color: #313131;
+}
+
+.top-middle-text {
+    margin-top: 20px;
+    font-size: 50px; 
+    color: #ad2f16;
+}
+
+.burger-pizza-card {
+    display: inline;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.burger-pizza-card img {
+    width: 200px;
+    border-radius: 50%;
+}
+
 @media screen and (max-width:1150px) {
     .create-pizza {
         background-size: contain;
@@ -258,12 +367,34 @@ body {
         font-size: 27px;
     }
 
-
     #fresh-gelato {
         padding-left: 80px;
     }
     #create-pizza-img {
         opacity: 0;
         width: 10%;
+    }
+
+    .addresses {
+        display: none;
+    }
+
+    .gelato-maps {
+        width: 100%;
+        justify-content: center;
+        height: 600px;
+    }
+    .maps-container {
+        width: 100%;
+    }
+
+    .hover-display {
+        height: 50px;
+    }
+    #shop-nth {
+        margin-top: 6%;
+    }
+    #where-to-taste {
+        font-size: 90px;
     }
 }

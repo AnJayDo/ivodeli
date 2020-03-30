@@ -56,7 +56,6 @@ app.use('/*', function(req,res){
     res.redirect('/error')
 })
 
-
 app.listen(port, function() {
     console.log('Listening on port',port)
 })

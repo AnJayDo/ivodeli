@@ -47,7 +47,7 @@
             </nav>
             <div class="gelato-text"><img style="margin-left: 5vw; width: 80%;" src="./images/FRESH AND YUMMY GELATO.png"></div>
             <div class="let-taste-text">
-                <ul>Come and taste our gelatos.</ul>
+                <ul id="title-come">Come and taste our gelatos.</ul>
                 <button id="btn-explore">CHECK IT OUT</button>
             </div>
             <div class="blank-space-resize"></div>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="product-card">
                         <img src="./images/CardCoconut.png">
-                        <ul style="color: #89604b;">Coconut</ul>
+                        <ul style="color: #89604b;" id="coconut">Coconut</ul>
                     </div>
                     <div class="product-card">
                         <img src="./images/CardVanilla.png">
@@ -69,20 +69,21 @@
                 <div class="products-cards">
                     <div class="product-card">
                         <img src="./images/CardStrawberry.png">
-                        <ul style="color: #b71020;">Strawberry</br>Sorbet</ul>
+                        <ul style="color: #b71020;" id="strawberry">Strawberry</br>Sorbet</ul>
                     </div>
                     <div class="product-card">
                         <img src="./images/CardDurian.png">
-                        <ul style="color: #5a4e17;">Durian & Sugar</br>
+                        <ul style="color: #5a4e17;" id="durian">Durian & Sugar</br>
                             Cane Sorbet</ul>
                     </div>
                     <div class="product-card">
                         <img src="./images/CardMango.png">
-                        <ul style="color: #e68d00;">Mango</br>
+                        <ul style="color: #e68d00;" id="mango">Mango</br>
                             Sorbet</ul>
                     </div>
                 </div>
             </div>
+            <div class="blank-space-resize"></div>
         </div>
         <div class="why-choose">
             <div class="blank-space-resize"></div>
@@ -91,44 +92,51 @@
                 <div class="quality-card">
                     <img class="icon-quality" src="./images/LogoHighRated.png">
                     <div>
-                        <div class="icon-quality-text">Highly rated</div>
-                        <ul>Well-known brand - Highly rated by local</br>
+                        <div class="icon-quality-text" id="icon-quality-text-1">Highly rated</div>
+                        <ul id="icon-quality-text-1-detail">Well-known brand - Highly rated by local</br>
                             and international tourist.</ul>
                     </div>
                 </div>
                 <div class="quality-card">
                     <img class="icon-quality" src="./images/Logo-DailyMade.png">
                     <div>
-                        <div class="icon-quality-text">Daily made</div>
-                        <ul>Fresh daily made product.</ul>
+                        <div class="icon-quality-text" id="icon-quality-text-2">Daily made</div>
+                        <ul id="icon-quality-text-2-detail">Fresh daily made product.</ul>
                     </div>
                 </div>
                 <div class="quality-card">
                     <img class="icon-quality" src="./images/Logo-HighQualityControl.png">
                     <div>
-                        <div class="icon-quality-text">High quality control</div>
-                        <ul>High quality control in </br>
+                        <div class="icon-quality-text" id="icon-quality-text-3">High quality control</div>
+                        <ul id="icon-quality-text-3-detail">High quality control in </br>
                             manufacture and logistic.</ul>
                     </div>
                 </div>
                 <div class="quality-card">
                     <img class="icon-quality" src="./images/Logo-Natural.png">
                     <div>
-                        <div class="icon-quality-text">100% Natural</div>
-                        <ul>No preservative</ul>
+                        <div class="icon-quality-text" id="icon-quality-text-4">100% Natural</div>
+                        <ul id="icon-quality-text-4-detail">No preservative</ul>
                     </div>
                 </div>
                 <div class="quality-card">
                     <img class="icon-quality" src="./images/Logo-Italian.png">
                     <div>
-                        <div class="icon-quality-text">Italian recipes</div>
-                        <ul>Italian recipes using imported</br>
+                        <div class="icon-quality-text" id="icon-quality-text-5">Italian recipes</div>
+                        <ul id="icon-quality-text-5-detail">Italian recipes using imported</br>
                             ingredients.</ul>
                     </div>
                 </div>
                 <div class="blank-space-resize"></div>
                 <div class="blank-space-resize"></div>
                 <div class="blank-space-resize"></div>
+                <div class="blank-space-resize"></div>
+            </div>
+        </div>
+        <div style="width: 100%;">
+            <div style="display: flex; width: 100%;">
+                <img style="width: 30%; height:unset ;margin-left: 5%; margin-top: 100px; margin-bottom: 600px;" src="./images/Gelato for wholesale.png">
+                <div style="width: 65%;"><img style="width: 100%;" src="./images/WholesaleImage.png"></div>
             </div>
         </div>
         <div>
@@ -228,6 +236,23 @@
         document.getElementById("english").onclick = function(){
             window.location.hash = '#eng';
             window.location.reload();
+        }
+        if (window.location.hash == "#vie") {
+            document.getElementById("title-come").innerHTML = "Cùng tới và thưởng thức những ly kem tuyệt vời nào."
+            document.getElementById("icon-quality-text-1").innerHTML = "Chất lượng cao"
+            document.getElementById("icon-quality-text-2").innerHTML = "Được làm hằng ngày"
+            document.getElementById("icon-quality-text-3").innerHTML = "Được kiểm soát chặc chẽ"
+            document.getElementById("icon-quality-text-4").innerHTML = "100% tự nhiên"
+            document.getElementById("icon-quality-text-5").innerHTML = "Công thức Ý"
+            document.getElementById("icon-quality-text-1-detail").innerHTML = "Là một thưởng hiệu được biết rộng rãi</br>Được đánh giá cao bởi người dân và khách du lịch quốc tế."
+            document.getElementById("icon-quality-text-2-detail").innerHTML = "Được làm mới hằng ngày"
+            document.getElementById("icon-quality-text-3-detail").innerHTML = "Khâu xử lý, chế biến đền khâu vận chuyển</br>tất cả đều được quản lý chặc chẽ"
+            document.getElementById("icon-quality-text-4-detail").innerHTML = "Không sử dụng chất bảo quản"
+            document.getElementById("icon-quality-text-5-detail").innerHTML = "Công thức Ý và nguyên liệu nhập khẩu."
+            document.getElementById("coconut").innerHTML = "Dừa"
+            document.getElementById("durian").innerHTML = "Sầu riêng</br>và Mía"
+            document.getElementById("strawberry").innerHTML = "Dâu tây"
+            document.getElementById("mango").innerHTML = "Xoài"
         }
     </script>
     <script>

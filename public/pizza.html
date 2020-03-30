@@ -48,16 +48,6 @@
                     src="./images/Local pizza local diffrences.png"></div>
             <div class="let-taste-text">
                 <button id="btn-explore">CHECK IT OUT</button>
-                <script>
-                    if (window.location.hash) {
-                        if (window.location.hash == "#vie") {
-                            document.getElementById("texttaste").textContent = "Cùng thường thức chiếc Burger ngon nhất nào"
-                        }
-                        if (window.location.hash == "#eng") {
-                            document.getElementById("texttaste").textContent = "Let’s taste the best burger in town with the fairest price"
-                        }
-                    }
-                </script>
             </div>
             <div class="blank-space-resize"></div>
             <div class="products-cards" id="products-cards-pizza" style="display: inline;">
@@ -72,24 +62,24 @@
             <div class="quality-card" >
                 <img class="icon-quality" src="./images/Icon Mix the pizza.png">
                 <div>
-                    <div class="icon-quality-text">Mix the pizzas</div>
-                    <ul>You can select choose toppings 
+                    <div class="icon-quality-text" id="icon-quality-text-1">Mix the pizza</div>
+                    <ul id="icon-quality-text-1-detail">You can select choose toppings 
                     </br>for each half</ul>
                 </div>
             </div>
             <div class="quality-card">
                 <img class="icon-quality" src="./images/Icon Additional.png">
                 <div>
-                    <div class="icon-quality-text">Many additional optionals</div>
-                    <ul>Add more things to your pizza with </br>
+                    <div class="icon-quality-text" id="icon-quality-text-2">Many additional optionals</div>
+                    <ul id="icon-quality-text-2-detail">Add more things to your pizza with </br>
                         our additional options</ul>
                 </div>
             </div>
             <div class="quality-card">
                 <img class="icon-quality" src="./images/Icon Ytaly.png">
                 <div>
-                    <div class="icon-quality-text">Italian recipes</div>
-                    <ul>Italian recipes using imported</br>
+                    <div class="icon-quality-text" id="icon-quality-text-3">Italian recipes</div>
+                    <ul id="icon-quality-text-3-detail">Italian recipes using imported</br>
                         ingredients.</ul>
                 </div>
             </div>
@@ -158,6 +148,14 @@
         document.getElementById("english").onclick = function(){
             window.location.hash = '#eng';
             window.location.reload();
+        }
+        if (window.location.hash == "#vie") {
+            document.getElementById("icon-quality-text-1").innerHTML = "Mix Pizza của bạn"
+            document.getElementById("icon-quality-text-2").innerHTML = "Nhiều lựa chọn thêm"
+            document.getElementById("icon-quality-text-3").innerHTML = "Công thức Ý"
+            document.getElementById("icon-quality-text-1-detail").innerHTML = "Bạn có chọn thể chọn</br>mỗi loại topping cho mỗi nửa Pizza"
+            document.getElementById("icon-quality-text-2-detail").innerHTML = "Có nhiều lựa chọn để thêm vào Pizza</br>để Pizza của bạn thêm phần hấp dẫn"
+            document.getElementById("icon-quality-text-3-detail").innerHTML = "Công thức Ý và nguyên liệu nhập khẩu."
         }
     </script>
     <script src="loadImage.js"></script>

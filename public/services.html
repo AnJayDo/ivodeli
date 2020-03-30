@@ -77,10 +77,46 @@
             </div>
             <div class="blank-space-resize"></div>
         </div>
-        <div style="text-align: center; margin-top: 50px; width: 100%; font-size: 80pt; font-family: 'Masterplan'; color: #005180;">
+        <div style="text-align: center; margin-top: 50px; width: 100%; font-size: 80pt; font-family: 'Masterplan'; color: #1ac4ee;">
             WE also have pizza and gelato for wholesale
         </div>
-        <div>
+        <div style="text-align: center; margin-top: 10px; width: 100%; font-size: 30pt; font-family: 'Masterplan'; color: #1ac4ee; opacity: 0.6;">
+            Many sorbets for choosing
+        </div>
+        <div class="products-cards" style="display: inline;" id="products-cards">
+            <div class="products-cards">
+                <div class="product-card">
+                    <img src="./images/CardChocolate.png">
+                    <ul style="color: #402010;">Chocolate</ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/CardCoconut.png">
+                    <ul style="color: #89604b;" id="coconut">Coconut</ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/CardVanilla.png">
+                    <ul style="color: #7a4a41;">Vanilla</ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/CardStrawberry.png">
+                    <ul style="color: #b71020;" id="strawberry">Strawberry</ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/CardDurian.png">
+                    <ul style="color: #5a4e17;" id="durian">Durian & Sugar Cane</ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/CardMango.png">
+                    <ul style="color: #e68d00;" id="mango">Mango</ul>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; width: 100%; justify-content: center; ">
+            <div style="text-align: center; margin-top: 40px; width: 15%; font-size: 30pt; font-family: 'Masterplan'; background-color: #3ece39; display: block; border-radius: 20px;">
+                <a href="tel:+84905776415" style="color:white; text-decoration: none;">Call now!</a>
+            </div>
+        </div>
+        <div style="display: none;">
             <ul style="font-size: 90pt; font-family: 'Masterplan'; margin-left: 7vw; color: #6d3109;">WHERE ARE WE</ul>
 
         </div>
@@ -138,15 +174,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        setTimeout(function () {
-            for (let i = 0; i < 5; i++) {
-                setInterval(function () {
-                    document.getElementById(`r${i + 1}`).click()
-                }, 2000*(i+1))
-            }
-        }, 3000)
-    </script>
     <script>
         document.getElementById("vietnamese").onclick = function () {
             window.location.hash = '#vie';

@@ -75,7 +75,7 @@ body {
     display: flex;
     width: 100%;
     margin-top: 50px;
-    font-family: ArialRounded;
+    font-family: 'UVNSachVo';
     justify-content: center;
 }
 
@@ -121,8 +121,8 @@ body {
 }
 
 .quality-card ul {
-    font-family: ArialRounded;
-    font-size: 23px;
+    font-family: 'UVNSachVo';
+    font-size: 21px;
     margin-left: 20px;
 }
 
