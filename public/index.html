@@ -62,11 +62,22 @@
                             <input type="radio" name="r" id="r3">
                             <input type="radio" name="r" id="r4">
                             <!-- <input type="radio" name="r" id="r5"> -->
-                            <div class="slide s1" style="background-image: url('./images/1.jpg')">
+                            <div class="slide s1" style="background-image: url('./images/Cover 1.png')">
+                                <img class="slide-left" style="margin-left: 65%; width: 37%; margin-top: 10%; height: 55%;" src="./images/WelcomeToIvoDeli.png">
                             </div>
-                            <div class="slide" style="background-image: url('./images/2.jpg')">
+                            <div class="slide" style="background-image: url('./images/Cover 2.png')">
+                                <img style="width: 60%" src="./images/Cover 2 Smoke.png">
+                                <div style="width: 38%; margin-top: 7%;">
+                                    <img style="width: 90%; height: 45%;" src="./images/Cover 2 Text.png">
+                                    <ul id="cover-2-text">Various burgers for choosing</br>
+                                        Many additional options for your burgers</ul>
+                                    <div class="call-button" style="width: 50%; margin-left:25%;">
+                                        <a href="./burger">Explore</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slide" style="background-image: url('./images/3.jpg')">
+                            <div class="slide" style="background-image: url('./images/Cover 3.png')">
+                                <img style="margin-left:20%; margin-top: 10%; width: 60%; height: 45%;" src="./images/Cover 3 Text.png">
                             </div>
                             <div class="slide" style="background-image: url('./images/Cover 4.png')">
                                 <div style="margin-left: 60%; width: 37%; ">
@@ -185,13 +196,13 @@
     <script>
     </script>
     <script>
-        // setTimeout(function () {
-        //     for (let i = 0; i < 5; i++) {
-        //         setInterval(function () {
-        //             document.getElementById(`r${i + 1}`).click()
-        //         }, 2000*(i+1))
-        //     }
-        // }, 3000)
+        setTimeout(function () {
+            for (let i = 0; i < 5; i++) {
+                setInterval(function () {
+                    document.getElementById(`r${i + 1}`).click()
+                }, 2000*(i+1))
+            }
+        }, 3000)
     </script>
     <script>
         document.getElementById("vietnamese").onclick = function () {
@@ -205,7 +216,7 @@
     </script>
     <script>
         if (window.location.hash == "#vie") {
-            document.getElementById("meat-text").innerHTML = "Tất cả thịt chúng tôi sử dụng đều được mua mới đều đặn</br>và lựa chọn vô cùng kĩ lưỡng.</br>Chúng tôi phục vụ những chiếc bánh burger ngon nhất</br>với loại thịt tối nhất để làm hài lòng thực khách."
+            document.getElementById("cover-2-text").innerHTML = "Nhiều loại Burger hấp dẫn</br>Cùng rất nhiều lựa khác khiến</br>chiếc Burger của bạn trở nên độc đáo"
         }
     </script>
     <script>

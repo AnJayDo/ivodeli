@@ -130,6 +130,21 @@ body {
     margin-left: 20px;
 }
 
+.slide-left {
+	-webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#cover-2-text {
+    font-family: UVNSachVo;
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 .call-button {
     text-align: center;
     margin-top: 40px;
@@ -300,4 +315,31 @@ body {
     #fresh-gelato {
         padding-left: 80px;
     }
+
+    #cover-2-text  {
+        display: none;
+    }
 }
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  
+  
