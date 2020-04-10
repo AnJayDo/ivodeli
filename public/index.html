@@ -52,9 +52,8 @@
                             style="height: 40px; padding-top: 10px;" src="images/Eng-icon.jpg"></a>
                 </div>
             </nav>
-            <div class="cover-container">
-                <div
-                    style="display: block; border-radius: 30px; width: 86%; height: 700px; margin-left: 7%; margin-top: 50px;">
+            <div class="covers-container">
+                <div class="covers">
                     <div class="slidershow middle">
 
                         <div class="slides">
@@ -62,22 +61,24 @@
                             <input type="radio" name="r" id="r2">
                             <input type="radio" name="r" id="r3">
                             <input type="radio" name="r" id="r4">
-                            <input type="radio" name="r" id="r5">
-                            <div class="slide s1">
-                                <img src="./images/1.jpg" alt="">
+                            <!-- <input type="radio" name="r" id="r5"> -->
+                            <div class="slide s1" style="background-image: url('./images/1.jpg')">
                             </div>
-                            <div class="slide">
-                                <img src="./images/2.jpg" alt="">
+                            <div class="slide" style="background-image: url('./images/2.jpg')">
                             </div>
-                            <div class="slide">
-                                <img src="./images/3.jpg" alt="">
+                            <div class="slide" style="background-image: url('./images/3.jpg')">
                             </div>
-                            <div class="slide">
-                                <img src="./images/4.jpg" alt="">
+                            <div class="slide" style="background-image: url('./images/Cover 4.png')">
+                                <div style="margin-left: 60%; width: 37%; ">
+                                    <img style="width: 100%;margin-top: 25%;height: 40%;"src="./images/Text Cover 4.png">
+                                    <div class="call-button">
+                                        <a href="./gelato#maps">Check the map</a>
+                                    </div>
+                                 </div>   
                             </div>
-                            <div class="slide">
+                            <!-- <div class="slide" style="background-image: url('./images/5.jpg')">
                                 <img src="./images/5.jpg" alt="">
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="navigation">
@@ -85,7 +86,7 @@
                             <label for="r2" class="bar"></label>
                             <label for="r3" class="bar"></label>
                             <label for="r4" class="bar"></label>
-                            <label for="r5" class="bar"></label>
+                            <!-- <label for="r5" class="bar"></label> -->
                         </div>
                     </div>
                 </div>
@@ -96,24 +97,7 @@
                 <a class="product-card" href="./gelato"><img style="width: 100%;" src="images/Gelato-card.png"></a>
             </div>
             <div class="blank-space-resize"></div>
-        </div>
-        <div class="meat" style="margin-top: 100px;">
-            <div style="width: 100%; display: flex; padding-top: 8%; padding-left: 30px;">
-                <img style="width: 55%" src="./images/Provide-Text.png">
-            </div>
-            <ul id="meat-text"
-                style="font-family: 'UVNSachVo'; color: #e3e3e3; margin-left: 30px; margin-top: 30px; font-size: 19px; color: darkgray;">
-                All meat we’re
-                using is bought once every 2 morning</br>
-                and chosen very carefully.</br>
-                We provide delicious burgers with good meat</br>
-                for pleasing our customers.</ul>
-            <div class="blank-space-resize"></div>
-            <div class="blank-space-resize"></div>
-            <div class="blank-space-resize"></div>
-            <div class="blank-space-resize"></div>
-        </div>
-
+        <!-- </div>
         <div class="fresh-gelato">
             <div id="fresh-gelato">
                 <div class="blank-space-resize"></div>
@@ -143,11 +127,7 @@
                 <div class="blank-space-resize"></div>
                 <div class="blank-space-resize"></div>
             </div>
-        </div>
-        <div>
-            <ul style="font-size: 90pt; font-family: 'Masterplan'; margin-left: 7vw; color: #6d3109;">WHERE ARE WE</ul>
-
-        </div>
+        </div> -->
         <footer>
             <div style="width: 100%;">
                 <div class="blank-space-footer"></div>
@@ -205,13 +185,13 @@
     <script>
     </script>
     <script>
-        setTimeout(function () {
-            for (let i = 0; i < 5; i++) {
-                setInterval(function () {
-                    document.getElementById(`r${i + 1}`).click()
-                }, 2000*(i+1))
-            }
-        }, 3000)
+        // setTimeout(function () {
+        //     for (let i = 0; i < 5; i++) {
+        //         setInterval(function () {
+        //             document.getElementById(`r${i + 1}`).click()
+        //         }, 2000*(i+1))
+        //     }
+        // }, 3000)
     </script>
     <script>
         document.getElementById("vietnamese").onclick = function () {
@@ -226,11 +206,6 @@
     <script>
         if (window.location.hash == "#vie") {
             document.getElementById("meat-text").innerHTML = "Tất cả thịt chúng tôi sử dụng đều được mua mới đều đặn</br>và lựa chọn vô cùng kĩ lưỡng.</br>Chúng tôi phục vụ những chiếc bánh burger ngon nhất</br>với loại thịt tối nhất để làm hài lòng thực khách."
-            document.getElementById("icon-quality-text-1").innerHTML = "Chất lượng cao"
-            document.getElementById("icon-quality-text-2").innerHTML = "Được làm hằng ngày"
-            document.getElementById("icon-quality-text-3").innerHTML = "Được kiểm soát chặc chẽ"
-            document.getElementById("icon-quality-text-4").innerHTML = "100% tự nhiên"
-            document.getElementById("icon-quality-text-5").innerHTML = "Công thức Ý"
         }
     </script>
     <script>

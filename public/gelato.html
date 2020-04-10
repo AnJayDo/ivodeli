@@ -135,8 +135,17 @@
         </div>
         <div style="width: 100%;">
             <div style="display: flex; width: 100%;">
-                <img style="width: 30%; height:unset ;margin-left: 5%; margin-top: 100px; margin-bottom: 600px;" src="./images/Gelato for wholesale.png">
-                <div style="width: 65%;"><img style="width: 100%;" src="./images/WholesaleImage.png"></div>
+                <div style="width: 30%;
+                height: unset;
+                margin-left: 5%;
+                margin-top: 10%;
+                margin-bottom: 15%;">
+                    <img style="width: 100%;" src="./images/Gelato for wholesale.png">
+                    <div class="call-button">
+                        <a href="tel:+84905776415">Contact now</a>
+                    </div>
+                </div> 
+                <div style="width: 65%;"><img style="width: 90%; margin-left: 5%;" src="./images/WholesaleImage.png"></div>
             </div>
         </div>
         <div>
@@ -229,6 +238,11 @@
         </footer>
     </div>
     <script>
+        document.getElementById("btn-explore").onclick = function () {
+            setTimeout(function () {
+                $('html, body').animate({ scrollTop: document.getElementById('products-cards').offsetTop }, 1000);
+            }, 500)
+        }
         document.getElementById("vietnamese").onclick = function(){
             window.location.hash = '#vie';
             window.location.reload();
@@ -236,6 +250,11 @@
         document.getElementById("english").onclick = function(){
             window.location.hash = '#eng';
             window.location.reload();
+        }
+        if(window.location.hash == '#maps') {
+            setTimeout(function() { 
+                $('html, body').animate({ scrollTop: document.getElementById('where-to-taste').offsetTop }, 1000); 
+                },500)
         }
         if (window.location.hash == "#vie") {
             document.getElementById("title-come").innerHTML = "Cùng tới và thưởng thức những ly kem tuyệt vời nào."
