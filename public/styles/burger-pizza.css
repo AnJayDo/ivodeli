@@ -102,9 +102,21 @@ body {
     white-space: pre-wrap;
     overflow: auto;
     text-overflow: ellipsis;
-    height: 50px;
-
+    height: 100px;
 }
+
+#products-cards-hotdog .product-card-title {
+    font-size: 30px;
+    text-overflow: ellipsis;
+    height: 50px;
+}
+
+#products-cards-pizza .product-card-title {
+    font-size: 28px;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+
 .product-card-description {
     float: left;
     width: 90%;
@@ -127,7 +139,7 @@ body {
 
 .meat {
     background-image: url("../images/MeatCover.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -295,7 +307,10 @@ body {
 }
 
 .unique-product-title {
-    font-size: 140px; font-family: 'Masterplan'; color: #8a210c;
+    font-size: 140px; 
+    font-family: 'Masterplan'; 
+    color: #8a210c;
+    text-align: center;
 }
 
 .unique-product-description {
@@ -396,5 +411,41 @@ body {
     }
     #where-to-taste {
         font-size: 90px;
+    }
+
+    .product-card-title {
+        font-size: 24px;
+        text-overflow: ellipsis;
+        height: 130px;
+    }
+
+    .product-card-description {
+        display: none;
+    }
+
+    #products-cards-hotdog .product-card-title {
+        font-size: 24px;
+        text-overflow: ellipsis;
+        height: 80px;
+    }
+
+    #products-cards-pizza .product-card-title {
+        font-size: 24px;
+        text-overflow: ellipsis;
+        height: 80px;
+    }
+
+    .unique-product-title {
+        font-size: 120px; 
+    }
+
+    .unique-product-title:first-child{
+        display: none;
+    }
+    #meat-text {
+        opacity: 0;
+    }
+    .let-taste-text {
+        display: none;
     }
 }

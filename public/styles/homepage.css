@@ -265,9 +265,17 @@ body {
   }
 
 @media screen and (max-width:1150px) {
+    #flags {
+        display: none;
+    }
     .products-cards {
         height: 450px;
     }
+
+    #burger-nav {
+        display: flex;
+    }
+
     .covers{
         height: 400px;
         width: 90%;

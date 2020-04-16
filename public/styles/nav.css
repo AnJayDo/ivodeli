@@ -40,6 +40,7 @@ nav {
 }
 
 #burger-nav {
+    z-index: 10;
     margin-left: 91%; 
     width: 70px; 
     margin-top: 2vh;
@@ -48,6 +49,7 @@ nav {
 }
 
 #navigator-box {
+    z-index: 10;
     background-color: rgb(184, 35, 35)fff;
     position: fixed; 
     margin-left: 95%;
@@ -87,13 +89,32 @@ nav {
         display: none;
     }
     #burger-nav {
-        margin-left: 88%;
+        margin-left: 80%;
+        width: 100px;
     }
     #flags {
         float: right; width: 80%;
     }
     #navigator-box {
         margin-top: 50px;
+    }
+    .navigator-box-list {
+        margin-top: 90px;
+    }
+    #navigator-box {
+        margin-left: 85%;
+    }
+    .navigator-box-list li {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 26px;
+        background-color: brown;
+        width: 200px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
     }
 }
 

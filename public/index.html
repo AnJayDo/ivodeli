@@ -107,55 +107,30 @@
                 <a class="product-card" href="./pizza"><img style="width: 100%;" src="images/Pizzas-card.png"></a>
                 <a class="product-card" href="./gelato"><img style="width: 100%;" src="images/Gelato-card.png"></a>
             </div>
-            <div class="blank-space-resize"></div>
-        <!-- </div>
-        <div class="fresh-gelato">
-            <div id="fresh-gelato">
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/LogoHighRated.png">
-                    <div class="icon-quality-text" id="icon-quality-text-1">Highly rated</div>
-                </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-DailyMade.png">
-                    <div class="icon-quality-text" id="icon-quality-text-2">Daily made</div>
-                </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-HighQualityControl.png">
-                    <div class="icon-quality-text" id="icon-quality-text-3">High quality control</div>
-                </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-Natural.png">
-                    <div class="icon-quality-text" id="icon-quality-text-4">100% Natural</div>
-                </div>
-                <div class="quality-card">
-                    <img class="icon-quality" src="./images/Logo-Italian.png">
-                    <div class="icon-quality-text" id="icon-quality-text-5">Italian recipes</div>
-                </div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-                <div class="blank-space-resize"></div>
-            </div>
-        </div> -->
+        </div>
         <footer>
             <div style="width: 100%;">
-                <div class="blank-space-footer"></div>
+                <div class="blank-space-resize"></div>
+                <div class="blank-space-resize"></div>
+                <div class="blank-space-resize"></div>
                 <div style="display: flex; font-family: 'UVNHongHaHep'; color: white; font-size: 18px;">
                     <img style="width: 117px; height: 72px;" src="./images/logo.png">
                     <div style="margin-left: 30px; width: 40%;">
                         <ul style="color: #e74e4e; font-size: 30px;">Đà Nẵng</ul>
-                        <ul>03 Lê Thánh Tôn street, Hải Châu district</ul>
-                        <ul>Lô 16-18 An Thượng 32 street, Ngũ Hành Sơn district</ul>
+                        <ul>03 Lê Thánh Tôn, Hải Châu</ul>
+                        <ul>Lô 16-18 An Thượng 32, Ngũ Hành Sơn</ul>
                         <ul style="color: #e74e4e; font-size: 30px;">Hội An</ul>
-                        <ul>54 Nguyễn Thị Minh Khai street, Cẩm Phô</ul>
+                        <ul>54 Nguyễn Thị Minh Khai, Cẩm Phô</ul>
+                        <ul>93 Phan Châu Trinh, Minh An</ul>
+                        <ul>128 Nguyễn Thái Học, Minh An</ul>
+                        <ul style="color: #e74e4e; font-size: 30px;">TP Hồ Chí Minh</ul>
+                        <ul>32 Đường 2C, Phú Mỹ, District 7</ul>
                     </div>
                     <div style="margin-left: 30px; display: grid; width: 20%;">
                         <ul style="color: #e74e4e; font-size: 30px;">Products</ul>
                         <a class="link" href="./burger">Burgers</a>
                         <a class="link" href="./pizza">Pizzas</a>
-                        <a class="link">Hotdogs</a>
+                        <a class="link" href="./burger#hotdog">Hotdogs</a>
                         <a class="link" href="./gelato">Gelato</a>
                         <a class="link" href="./services">Services</a>
                     </div>
@@ -196,13 +171,12 @@
     <script>
     </script>
     <script>
-        setTimeout(function () {
-            for (let i = 0; i < 5; i++) {
-                setInterval(function () {
-                    document.getElementById(`r${i + 1}`).click()
-                }, 2000*(i+1))
-            }
-        }, 3000)
+        for(let i=0; i<=5; i++)
+            setInterval(function () {
+                    if(i%5!==0)
+                        document.getElementById(`r${(i)%5}`).click()
+                        //if(i<11) click(i+1)
+                }, 2000*i)
     </script>
     <script>
         document.getElementById("vietnamese").onclick = function () {
@@ -226,13 +200,6 @@
                 document.getElementById("content").style = null;
             }, 1500));
         } catch (e) { };
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('*').bind('cut copy paste contextmenu', function (e) {
-                e.preventDefault();
-            })
-        });
     </script>
     <script src="burger-nav.js"></script>
 </body>
