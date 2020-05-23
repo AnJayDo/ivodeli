@@ -276,24 +276,24 @@ function loadVNGelato() {
                     var addInnerHtml = `<div class="products-cards">
                     <div class="product-card-gelato">
                         <img src="./images/${data[i*4].image}">
-                        <div class="product-card-title">${data[i*3].titleVN}</div>
+                        <div class="product-card-title">${data[i*4].titleVN}</div>
                     </div>`
                     if(data[i*3+1]) {
                         addInnerHtml+=`<div class="product-card-gelato">
                             <img src="./images/${data[(i*4)+1].image}">
-                            <div class="product-card-title">${data[(i*3)+1].titleVN}</div>
+                            <div class="product-card-title">${data[(i*4)+1].titleVN}</div>
                         </div>` 
                     }
                     if(data[i*3+2]) {
                         addInnerHtml+=`<div class="product-card-gelato">
                             <img src="./images/${data[(i*4)+2].image}">
-                            <div class="product-card-title">${data[(i*3)+2].titleVN}</div>
+                            <div class="product-card-title">${data[(i*4)+2].titleVN}</div>
                         </div>` 
                     }
                     if(data[i*3+3]) {
                         addInnerHtml+=`<div class="product-card-gelato">
                             <img src="./images/${data[(i*4)+3].image}">
-                            <div class="product-card-title">${data[(i*3)+3].titleVN}</div>
+                            <div class="product-card-title">${data[(i*4)+3].titleVN}</div>
                         </div>` 
                     }
                     addInnerHtml+=`</div>`
@@ -314,24 +314,24 @@ function loadENGGelato() {
                     var addInnerHtml = `<div class="products-cards">
                     <div class="product-card-gelato">
                         <img src="./images/${data[i*4].image}">
-                        <div class="product-card-title">${data[i*3].titleENG}</div>
+                        <div class="product-card-title">${data[i*4].titleENG}</div>
                     </div>`
                     if(data[i*3+1]) {
                         addInnerHtml+=`<div class="product-card-gelato">
                             <img src="./images/${data[(i*4)+1].image}">
-                            <div class="product-card-title">${data[(i*3)+1].titleENG}</div>
+                            <div class="product-card-title">${data[(i*4)+1].titleENG}</div>
                         </div>` 
                     }
                     if(data[i*3+2]) {
                         addInnerHtml+=`<div class="product-card-gelato">
                             <img src="./images/${data[(i*4)+2].image}">
-                            <div class="product-card-title">${data[(i*3)+2].titleENG}</div>
+                            <div class="product-card-title">${data[(i*4)+2].titleENG}</div>
                         </div>` 
                     }
                     if(data[i*3+3]) {
                         addInnerHtml+=`<div class="product-card-gelato">
                             <img src="./images/${data[(i*4)+3].image}">
-                            <div class="product-card-title">${data[(i*3)+3].titleENG}</div>
+                            <div class="product-card-title">${data[(i*4)+3].titleENG}</div>
                         </div>` 
                     }
                     addInnerHtml+=`</div>`
