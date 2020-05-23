@@ -21,6 +21,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: MinionPro;
+    src: url(../fonts/MINIONPRO-BOLD.OTF);
+    font-weight: bold;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -78,16 +84,31 @@ body {
     justify-content: center;
 }
 
-.product-card {
-    width: 23%;
+.product-card-gelato {
+    width: 15%;
     margin-top: 40px;
     margin-right: 25px;
     margin-left: 25px;
     transition: all 0.5s ease;
     display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #a86944;
 }
 
-.product-card img{
+.product-card-title {
+    text-align: center;
+    font-size: 30px;
+    color: #a86944;
+    width: 100%;
+    white-space: pre-wrap;
+    font-family: 'MinionPro';
+    overflow: auto;
+    text-overflow: ellipsis;
+    height: 100px;
+}
+
+.product-card-gelato img{
     width: 100%;
 }
 

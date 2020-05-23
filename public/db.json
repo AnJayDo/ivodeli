@@ -2,7 +2,7 @@
   "burgers": [
     {
       "titleVN": "Burger Gà Nướng Mật Ong",
-      "titleENG": "Grilled Chicken Burger with Honey",
+      "titleENG": "Grilled Chicken with Honey",
       "descriptionVN": "Bao gồm gà nướng mật ong, salad và rau củ",
       "descriptionENG": "Included grilled chicken with honey, salad and veggies",
       "price": "39.000đ",
@@ -10,7 +10,7 @@
     },
     {
       "titleVN": "Burger bò Wagyu Nhật",
-      "titleENG": "Japanese Wagyu Beef Burger",
+      "titleENG": "Japanese Wagyu Beef",
       "descriptionVN": "Bao gồm lát bò wagyu 120g, phô mai, rau củ và sốt",
       "descriptionENG": "Included Wagyu Beef (weighted 120g), cheese, vegetables and sauce ",
       "price": "99.000đ",
@@ -18,7 +18,7 @@
     },
     {
       "titleVN": "Burger Nấm Kim Chi Chay",
-      "titleENG": "Vegetarian Enoki Mushroom Burger",
+      "titleENG": "Vegetarian Enoki Mushroom",
       "descriptionVN": "Bao gồm rau củ, nấm kim chi và trứng",
       "descriptionENG": "Included vegetable, enoki mushroom and egg",
       "price": "39.000đ",
@@ -26,7 +26,7 @@
     },
     {
       "titleVN": "Burger Nấm Kim Chi Ba Rọi Xông Khói ",
-      "titleENG": "Smoked Bacon Enoki Mushroom Burger",
+      "titleENG": "Smoked Bacon Enoki Mushroom",
       "descriptionVN": "Bao gồm rau củ, nấm kim chi và ba rọi xông khói",
       "descriptionENG": "Included vegetable, enoki mushroom and smoked bacon",
       "price": "39.000đ",
@@ -34,7 +34,7 @@
     },
     {
       "titleVN": "Burger Ba Chỉ Bò Mỹ kèm sốt BBQ",
-      "titleENG": "USA Beef Belly Burger with BBQ Sauce",
+      "titleENG": "USA Beef Belly with BBQ Sauce",
       "descriptionVN": "Bao gồm rau củ, ba chỉ bò Mỹ ăn kèm sốt BBQ",
       "descriptionENG": "Included vegetable, beef belly with BBQ sauce",
       "price": "39.000đ",
@@ -44,7 +44,7 @@
   "pizzas": [
     {
       "titleVN": "Pizza Phô Mai",
-      "titleENG": "Cheese Pizza",
+      "titleENG": "Cheese",
       "descriptionVN": "Bao gồm vỏ bánh và lớp phô mai",
       "descriptionENG": "Included pizza with cheese",
       "price": "119.000đ",
@@ -52,7 +52,7 @@
     },
     {
       "titleVN": "Pizza Hawaiian",
-      "titleENG": "Hawaiian Pizza",
+      "titleENG": "Hawaiian",
       "descriptionVN": "Bao gồm phô mai, ớt chuông, dứa nướng và thịt ba rọi",
       "descriptionENG": "Included cheese, bell pepper, grilled pineapple and bacon",
       "price": "119.000đ",
@@ -60,7 +60,7 @@
     },
     {
       "titleVN": "Pizza Bò Bằm",
-      "titleENG": "Minced Beef Pizza",
+      "titleENG": "Minced Beef",
       "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và bò bằm",
       "descriptionENG": "Included cheese, bell pepper, potato and minced beef",
       "price": "119.000đ",
@@ -68,7 +68,7 @@
     },
     {
       "titleVN": "Pizza Xúc Xích Heo",
-      "titleENG": "Pork Sausage Pizza",
+      "titleENG": "Pork Sausage",
       "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và xúc xích heo",
       "descriptionENG": "Included cheese, bell pepper, potato and pork sausage",
       "price": "119.000đ",
@@ -76,7 +76,7 @@
     },
     {
       "titleVN": "Pizza Ba Chỉ Bò Mỹ",
-      "titleENG": "USA Beef Belly Pizza",
+      "titleENG": "USA Beef Belly",
       "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và ba chỉ bò Mỹ",
       "descriptionENG": "Included cheese, bell pepper, potato and USA beef belly",
       "price": "119.000đ",
@@ -84,7 +84,7 @@
     },
     {
       "titleVN": "Pizza Gà Nướng Mật Ong",
-      "titleENG": "Grilled Chicken with Honey Pizza",
+      "titleENG": "Grilled Chicken with Honey",
       "descriptionVN": "Bao gồm phô mai, ớt chuông, cà chua và gà nướng mật ong",
       "descriptionENG": "Included cheese, bell pepper, potato and grilled chicken with honey",
       "price": "119.000đ",
@@ -107,6 +107,104 @@
       "descriptionENG": "Included vegetable and chicken sausage",
       "price": "39.000đ",
       "image": "Hotdog Gà.jpg"
+    }
+  ],
+  "gelatos": [
+    {
+      "titleVN": "Sôcôla Bỉ",
+      "titleENG": "Belgium Chocolate",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Belgium Chocolate.png"
+    },
+    {
+      "titleVN": "Dừa",
+      "titleENG": "Coconut",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Coconut.png"
+    },
+    {
+      "titleVN": "Vanilla và Oreo",
+      "titleENG": "Vanilla and Oreo",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Vanilla and Oreo.png"
+    },
+    {
+      "titleVN": "Xoài",
+      "titleENG": "Mango Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Mango Sorbet.png"
+    },
+    {
+      "titleVN": "Dâu tây",
+      "titleENG": "Strawberry Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Strawberry Sorbet.png"
+    },
+    {
+      "titleVN": "Sầu riêng",
+      "titleENG": "Durian Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Durian Sorbet.png"
+    },
+    {
+      "titleVN": "Thanh long",
+      "titleENG": "Dragon Fruit Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Dragon Fruit Sorbet.png"
+    },
+    {
+      "titleVN": "Caramel và Oreo",
+      "titleENG": "Caramel and Oreo",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Caramel and Oreo.png"
+    },
+    {
+      "titleVN": "Chanh dây",
+      "titleENG": "Passion Fruit Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Passion Fruit Sorbet.png"
+    },
+    {
+      "titleVN": "Bơ",
+      "titleENG": "Avocado Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Avocado Sorbet.png"
+    },
+    {
+      "titleVN": "Kiwi",
+      "titleENG": "Kiwi Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Kiwi Sorbet.png"
+    },
+    {
+      "titleVN": "Nhãn",
+      "titleENG": "Longan Sorbet",
+      "descriptionVN": "",
+      "descriptionENG": "",
+      "price": "",
+      "image": "Longan Sorbet.png"
     }
   ]
 }

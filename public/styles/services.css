@@ -16,6 +16,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: MinionPro;
+    src: url(../fonts/MINIONPRO-BOLD.OTF);
+    font-weight: bold;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -81,6 +87,18 @@ body {
     display: block;
 }
 
+.product-card-title {
+    text-align: center;
+    font-size: 30px;
+    color: #a86944;
+    width: 100%;
+    white-space: pre-wrap;
+    font-family: 'MinionPro';
+    overflow: auto;
+    text-overflow: ellipsis;
+    height: 100px;
+}
+
 .product-card img{
     width: 100%;
 }
@@ -104,13 +122,6 @@ body {
 
 .product-card-gelato img{
     width: 100%;
-}
-
-.product-card-gelato ul {
-    align-self: center;
-    font-family: 'Masterplan';
-    font-size: 35px;
-    text-align: center;
 }
 
 .find-on {

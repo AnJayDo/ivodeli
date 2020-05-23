@@ -51,6 +51,8 @@ router.post('', upload.single('photo'), function(req,res){
             db.get('burgers').push(product).write()
         } else if(req.body.isHotdog=='Hotdog') {
             db.get('hotdogs').push(product).write()
+        } else if(req.body.isGelato=='Gelato') {
+            db.get('gelatos').push(product).write()
         } else db.get('pizzas').push(product).write()
         res.status(200).send(product)
     } catch (err) {

@@ -16,6 +16,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: MinionPro;
+    src: url(../fonts/MINIONPRO-BOLD.OTF);
+    font-weight: bold;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -100,9 +106,10 @@ body {
     color: #9b2929;
     width: 90%;
     white-space: pre-wrap;
+    font-family: 'MinionPro';
     overflow: auto;
     text-overflow: ellipsis;
-    height: 100px;
+    height: 50px;
 }
 
 #products-cards-hotdog .product-card-title {
@@ -144,21 +151,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Masterplan';
-}
-
-.fresh-gelato {
-    background-image: url("../images/FRESH\ AND\ YUMMY.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    font-family: 'UVNSachVo';
-    font-size: 30px;
-    color: white;
-}
-
-#fresh-gelato {
-    padding-left: 130px;
 }
 
 .quality-card {
@@ -336,7 +328,15 @@ body {
     border-radius: 50%;
 }
 
+#delicious-text {
+    max-height: 500px; width: 30vw; margin-top: 60px; margin-left: 50px;
+}
+
 @media screen and (max-width:1150px) {
+    #delicious-text {
+        max-height: 250px; width: 30vw; margin-top: 30px; margin-left: 30px;
+    }
+
     .create-pizza {
         background-size: contain;
     }
@@ -416,7 +416,6 @@ body {
     .product-card-title {
         font-size: 24px;
         text-overflow: ellipsis;
-        height: 130px;
     }
 
     .product-card-description {
