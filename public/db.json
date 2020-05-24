@@ -107,6 +107,14 @@
       "descriptionENG": "Included vegetable and chicken sausage",
       "price": "39.000đ",
       "image": "Hotdog Gà.jpg"
+    },
+    {
+      "titleVN": "Hotdog Bò",
+      "titleENG": "Beef Hotdog",
+      "descriptionVN": "Bao gồm rau củ và xúc xích bò",
+      "descriptionENG": "Included vegetable and beef sausage",
+      "price": "39.000đ",
+      "image": "Hotdog Bò.jpg"
     }
   ],
   "gelatos": [
@@ -152,7 +160,7 @@
     },
     {
       "titleVN": "Sầu riêng",
-      "titleENG": "Durian Sorbet",
+      "titleENG": "Durian",
       "descriptionVN": "",
       "descriptionENG": "",
       "price": "",
@@ -184,7 +192,7 @@
     },
     {
       "titleVN": "Bơ",
-      "titleENG": "Avocado Sorbet",
+      "titleENG": "Avocado",
       "descriptionVN": "",
       "descriptionENG": "",
       "price": "",
@@ -200,7 +208,7 @@
     },
     {
       "titleVN": "Nhãn",
-      "titleENG": "Longan Sorbet",
+      "titleENG": "Longan",
       "descriptionVN": "",
       "descriptionENG": "",
       "price": "",
